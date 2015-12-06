@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8cfc632-a5a8-46ea-ad1c-439baedd9ff2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_37_bin.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SupTrip_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SupTrip_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Lib_Hibernate3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Lib_Hibernate3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Lib_Jersey.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Lib_Jersey.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SupTrip.iml" afterPath="$PROJECT_DIR$/SupTrip.iml" />
     </list>
     <ignored path="SupCommerce.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,6 +61,8 @@
         <option value="Mathieu Vandeginste" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -850,7 +846,7 @@
       <workItem from="1449239124597" duration="214000" />
       <workItem from="1449335387459" duration="21255000" />
       <workItem from="1449413853586" duration="6479000" />
-      <workItem from="1449430980425" duration="1305000" />
+      <workItem from="1449430980425" duration="1382000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies into project&#10;(Tomcat, Hibernate, mySqlConnector, Jersey)">
       <created>1449431770331</created>
@@ -858,11 +854,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449431770332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding dependencies into project&#10;(Tomcat, Hibernate, mySqlConnector, Jersey)">
+      <created>1449433620699</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1449433620699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92374000" />
+    <option name="totallyTimeSpent" value="92451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1180,6 +1182,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
