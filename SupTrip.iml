@@ -31,8 +31,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.28" level="application_server_libraries" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.37-bin" level="project" />
-    <orderEntry type="library" name="Lib-Hibernate3" level="project" />
     <orderEntry type="library" name="Lib-Jersey" level="project" />
+    <orderEntry type="library" name="Lib-Hibernate3" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1" level="project" />
   </component>
 </module>

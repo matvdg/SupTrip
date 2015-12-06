@@ -7,9 +7,9 @@
           <element id="module-output" name="SupTrip" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="mysql-connector-java-5.1.37-bin" />
-          <element id="library" level="project" name="Lib-Hibernate3" />
+          <element id="library" level="project" name="mysql-connector-java-5.1" />
           <element id="library" level="project" name="Lib-Jersey" />
+          <element id="library" level="project" name="Lib-Hibernate3" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="SupTrip/web/Web" />
