@@ -19,7 +19,7 @@ public interface CampusDao {
     /**
      * Find a campus by id
      */
-    Campus findCampusById(Long id);
+    Campus findCampusById(int id);
 
     /**
      * @return an unmodifiable list of all campuses stored in memory
@@ -30,4 +30,9 @@ public interface CampusDao {
      * Remove a campus from the memory
      */
     void removeCampus(Campus campus);
+
+    /**
+     * Remove a campus from the memory by ID
+     */
+    void removeCampusById(int id);
 }

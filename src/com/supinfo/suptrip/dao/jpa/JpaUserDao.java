@@ -1,7 +1,9 @@
 package com.supinfo.suptrip.dao.jpa;
 
 import com.supinfo.suptrip.dao.UserDao;
+import com.supinfo.suptrip.entity.Campus;
 import com.supinfo.suptrip.entity.User;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -20,7 +22,6 @@ public class JpaUserDao implements UserDao {
     @Override
     public void addUser(User user) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
@@ -35,7 +36,6 @@ public class JpaUserDao implements UserDao {
     @Override
     public void updateUser(User user) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
@@ -45,15 +45,12 @@ public class JpaUserDao implements UserDao {
             if (t.isActive()) t.rollback();
             em.close();
         }
-
     }
 
     @Override
-    public User findUserById(Long id) {
+    public User findUserById(int id) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         User user = null;
         try {
             t.begin();
@@ -63,18 +60,14 @@ public class JpaUserDao implements UserDao {
             if (t.isActive()) t.rollback();
             em.close();
         }
-
         return user;
     }
 
     @Override
     public List<User> getAllUsers() {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         List<User> myArrayList = null;
-
         try {
             t.begin();
             Query query = em.createQuery("SELECT c FROM Campus AS c");
@@ -84,16 +77,13 @@ public class JpaUserDao implements UserDao {
             if (t.isActive()) t.rollback();
             em.close();
         }
-
         return myArrayList;
     }
 
     @Override
     public void removeUser(User user) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         try {
             t.begin();
             em.remove(user);
@@ -102,7 +92,24 @@ public class JpaUserDao implements UserDao {
             if (t.isActive()) t.rollback();
             em.close();
         }
+    }
 
+    @Override
+    public List<User> findUsersByCampus(Campus campus) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction t = em.getTransaction();
+        List<User> myArrayList = null;
+        try {
+            t.begin();
+            Query query = em.createQuery("SELECT users FROM User AS users WHERE users.campus = :campus");
+            query.setParameter("campus", campus);
+            myArrayList = query.getResultList();
+            t.commit();
+        } finally {
+            if (t.isActive()) t.rollback();
+            em.close();
+        }
+        return myArrayList;
     }
 
 }

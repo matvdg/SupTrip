@@ -2,6 +2,7 @@ package com.supinfo.suptrip.dao.jpa;
 
 import com.supinfo.suptrip.dao.TripDao;
 import com.supinfo.suptrip.entity.Trip;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -49,7 +50,7 @@ public class JpaTripDao implements TripDao {
     }
 
     @Override
-    public Trip findTripById(Long id) {
+    public Trip findTripById(int id) {
         EntityManager em = emf.createEntityManager();
 
         EntityTransaction t = em.getTransaction();

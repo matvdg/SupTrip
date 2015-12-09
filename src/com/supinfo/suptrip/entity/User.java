@@ -1,10 +1,9 @@
 package com.supinfo.suptrip.entity;
 
+import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Collection;
-import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -12,16 +11,16 @@ public class User implements Serializable {
 
     // properties
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-    private Boolean admin;
+    private boolean admin;
 
     @ManyToOne
     @JoinColumn(name = "id_campus")
+
     private Campus campus;
 
 /*
@@ -30,8 +29,19 @@ public class User implements Serializable {
 
 */
     //constructor
+
     public User() {
 
+    }
+
+    public User(int id, String firstName, String lastName, String email, String password, boolean admin, Campus campus) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = DigestUtils.sha1Hex(password);
+        this.admin = admin;
+        this.campus = campus;
     }
 
 
@@ -85,7 +95,7 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public Boolean getAdmin() {
+    public boolean getAdmin() {
         return admin;
     }
 
@@ -100,4 +110,6 @@ public class User implements Serializable {
     public void setCampus(Campus campus) {
         this.campus = campus;
     }
+
+
 }

@@ -19,7 +19,6 @@ import util.CookieFilter;
 import util.HTMLFilter;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ResourceBundle;

@@ -34,5 +34,15 @@
     <orderEntry type="library" name="Lib-Jersey" level="project" />
     <orderEntry type="library" name="Lib-Hibernate3" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Librairies/commons-codec-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="commons-codec-1.10" level="project" />
   </component>
 </module>

@@ -20,7 +20,6 @@ import websocket.drawboard.wsmessages.BinaryWebsocketMessage;
 import websocket.drawboard.wsmessages.StringWebsocketMessage;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

@@ -1,7 +1,9 @@
 package com.supinfo.suptrip.dao.jpa;
 
 import com.supinfo.suptrip.dao.CampusDao;
+import com.supinfo.suptrip.dao.DaoFactory;
 import com.supinfo.suptrip.entity.Campus;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -12,15 +14,13 @@ public class JpaCampusDao implements CampusDao {
 
     private EntityManagerFactory emf;
 
-    public JpaCampusDao(EntityManagerFactory emf)
-    {
+    public JpaCampusDao(EntityManagerFactory emf) {
         this.emf = emf;
     }
 
     @Override
     public void addCampus(Campus campus) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
@@ -35,7 +35,6 @@ public class JpaCampusDao implements CampusDao {
     @Override
     public void updateCampus(Campus campus) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
@@ -48,11 +47,9 @@ public class JpaCampusDao implements CampusDao {
     }
 
     @Override
-    public Campus findCampusById(Long id) {
+    public Campus findCampusById(int id) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         Campus campus = null;
         try {
             t.begin();
@@ -68,11 +65,8 @@ public class JpaCampusDao implements CampusDao {
     @Override
     public List<Campus> getAllCampuses() {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         List<Campus> myArrayList = null;
-
         try {
             t.begin();
             Query query = em.createQuery("SELECT c FROM Campus AS c");
@@ -88,12 +82,24 @@ public class JpaCampusDao implements CampusDao {
     @Override
     public void removeCampus(Campus campus) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         try {
             t.begin();
             em.remove(campus);
+            t.commit();
+        } finally {
+            if (t.isActive()) t.rollback();
+            em.close();
+        }
+    }
+
+    @Override
+    public void removeCampusById(int id) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction t = em.getTransaction();
+        try {
+            t.begin();
+            em.remove(DaoFactory.getCampusDao().findCampusById(id));
             t.commit();
         } finally {
             if (t.isActive()) t.rollback();

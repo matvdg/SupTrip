@@ -8,7 +8,9 @@
 <jsp:include page="header.jsp" />
 
 <%
-    Boolean authError = (Boolean) request.getAttribute("authError");
+    Boolean authError = (Boolean) session.getAttribute("authError");
+    Boolean boosterError = (Boolean) session.getAttribute("boosterError");
+    Boolean idError = (Boolean) session.getAttribute("idError");
 %>
 <div class="table-responsive">
         <div class="jumbotron" style="height: 100%;margin-left: 0px;margin-right: 0px;width: 100%;">
@@ -20,9 +22,19 @@
                 <form class="form-signin" role="form" action="/login" method="post">
                     <p>
                         <input style="width: 300px" type="text" class="form-control" placeholder="ID Booster" name="idBooster">
-                        <input style="width: 300px" type="text" class="form-control" placeholder="Password" name="password">
+                        <input style="width: 300px" type="password" class="form-control" placeholder="Password"
+                               name="password">
                         <% if (authError) { %>
-                            <div style="width: 300px" class="alert alert-danger" role="alert">Wrong ID Booster/Password</div>
+
+            <div style="width: 300px" class="alert alert-danger" role="alert">Wrong password!</div>
+            <%}%>
+            <% if (boosterError) { %>
+            <div style="width: 300px" class="alert alert-danger" role="alert">This ID Booster is not registered!</div>
+            <%}%>
+            <% if (idError) { %>
+            <div style="width: 300px" class="alert alert-danger" role="alert">Your ID Booster must be a six-digits
+                number!
+            </div>
                         <%}%>
 
                     </p>

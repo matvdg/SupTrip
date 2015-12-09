@@ -2,7 +2,6 @@ package com.supinfo.suptrip.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.List;
 
 @Entity
@@ -15,7 +14,7 @@ public class Campus implements Serializable {
     private int id;
     private String name;
 
-    @OneToMany(mappedBy = "campus")
+    @OneToMany(cascade = {CascadeType.REMOVE}, mappedBy = "campus")
     private List<User> users;
 
     /*@OneToMany(mappedBy = "campus")

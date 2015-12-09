@@ -18,7 +18,6 @@ package websocket.snake;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
-import java.awt.*;
 import java.io.EOFException;
 import java.util.Iterator;
 import java.util.Random;

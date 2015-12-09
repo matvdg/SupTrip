@@ -5,11 +5,15 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="SupTrip" />
+          <element id="jpa-descriptors" facet="SupTrip/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="mysql-connector-java-5.1" />
           <element id="library" level="project" name="Lib-Jersey" />
           <element id="library" level="project" name="Lib-Hibernate3" />
+          <element id="file-copy" path="$PROJECT_DIR$/Librairies/commons-codec-1.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Librairies/commons-codec-1.2.jar" />
+          <element id="library" level="project" name="commons-codec-1.10" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="SupTrip/web/Web" />

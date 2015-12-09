@@ -19,7 +19,7 @@ public interface TripDao {
     /**
      * Find a trip by id
      */
-    Trip findTripById(Long id);
+    Trip findTripById(int id);
 
     /**
      * @return an unmodifiable list of all trips stored in memory
