@@ -41,7 +41,9 @@
                 <% if (session.getAttribute("username") == null) { %>
                         <li <% if (url.equals("/login.jsp")) { %>class="active" <%}%>><a href="/login"><span class="glyphicon glyphicon-user"></span> Log in </a></li>
                 <% } else { %>
-                        <li><a href="/logout"><span class="glyphicon glyphicon-off"></span> <%= session.getAttribute("username") %> - Logout </a></li>
+                <li><a href="/logout"><span
+                        class="glyphicon glyphicon-off"></span> <%= session.getAttribute("username") %> - Logout </a>
+                </li>
                 <% } %>
             </ul>
 

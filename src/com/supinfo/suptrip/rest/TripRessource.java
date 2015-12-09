@@ -1,32 +1,25 @@
 package com.supinfo.suptrip.rest;
 
-/*
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
 @Path("/trips")
 public class TripRessource {
 
 
-    @GET
-    @Produces(MediaType.APPLICATION_XML)
-    public List<Trip> getAllProductsInXml(){
-        return DaoFactory.getTripDao().getAllTrips();
-    }
+
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String getAllProductsInJson(){
-        JSONWriter json = new JSONWriter();
-        int[] ints = {1, 2, 3, 4, 5};
-        String[] strings = {"abc", "def", "ghi"};
-        return gson.toJson(ints);
-    }
-
-    @GET
-    @Path("/{productId}")
-    @Produces(MediaType.APPLICATION_XML)
-    public String getProductInXml(@PathParam("productId")  Long productId){
         String products = "";
         return products;
     }
+
 
     @GET
     @Path("/{productId}")
@@ -35,11 +28,4 @@ public class TripRessource {
         String products = "";
         return products;
     }
-
-    @DELETE
-    public void removeProduct(@PathParam("productId") Long productId){
-
-    }
-
 }
-*/

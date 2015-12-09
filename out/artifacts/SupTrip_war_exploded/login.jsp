@@ -22,15 +22,19 @@
                 <form class="form-signin" role="form" action="/login" method="post">
                     <p>
                         <input style="width: 300px" type="text" class="form-control" placeholder="ID Booster" name="idBooster">
-                        <input style="width: 300px" type="password" class="form-control" placeholder="Password" name="password">
+                        <input style="width: 300px" type="password" class="form-control" placeholder="Password"
+                               name="password">
                         <% if (authError) { %>
-                            <div style="width: 300px" class="alert alert-danger" role="alert">Wrong password!</div>
-                        <%}%>
-                        <% if (boosterError) { %>
-                            <div style="width: 300px" class="alert alert-danger" role="alert">This ID Booster is not registered!</div>
-                        <%}%>
-                        <% if (idError) { %>
-                            <div style="width: 300px" class="alert alert-danger" role="alert">Your ID Booster must be a six-digits number!</div>
+
+            <div style="width: 300px" class="alert alert-danger" role="alert">Wrong password!</div>
+            <%}%>
+            <% if (boosterError) { %>
+            <div style="width: 300px" class="alert alert-danger" role="alert">This ID Booster is not registered!</div>
+            <%}%>
+            <% if (idError) { %>
+            <div style="width: 300px" class="alert alert-danger" role="alert">Your ID Booster must be a six-digits
+                number!
+            </div>
                         <%}%>
 
                     </p>

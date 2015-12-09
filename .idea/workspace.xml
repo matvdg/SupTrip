@@ -1,505 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8cfc632-a5a8-46ea-ad1c-439baedd9ff2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/CampusDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/CampusDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/TripDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/TripDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/UserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/UserDao.class" />
+    <list default="true" id="e8cfc632-a5a8-46ea-ad1c-439baedd9ff2" name="Default" comment="login / signIn&#10;errors handling&#10;dao (finished + new methods)&#10;password encryption in DB (SHA-1)">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Librairies/commons-codec-1.10.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/Campus.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/Campus.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/User.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/HomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ManageCampusServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ManageCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveTripServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/SigninServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/SigninServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/lib/antlr-2.7.6.jar" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/lib/antlr-2.7.6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/CampusDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/CampusDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/TripDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/TripDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/UserDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/UserDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/Campus.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/Campus.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/User.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/HomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ManageCampusServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ManageCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveTripServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/SigninServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/SigninServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SupTrip_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SupTrip_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/LICENSE" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/NOTICE" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/NOTICE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/RELEASE-NOTES" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/RELEASE-NOTES" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/RUNNING.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/RUNNING.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/catalina-tasks.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/catalina-tasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/catalina.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/catalina.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/configtest.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/configtest.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/digest.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/digest.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/setclasspath.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/setclasspath.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/shutdown.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/shutdown.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/startup.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/startup.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/tool-wrapper.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/tool-wrapper.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/version.bat" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/bin/version.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/catalina.policy" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/catalina.policy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/catalina.properties" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/catalina.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/context.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/logging.properties" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/logging.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/server.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/server.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/tomcat-users.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/tomcat-users.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/tomcat-users.xsd" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/tomcat-users.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/web.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/conf/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/RELEASE-NOTES.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/RELEASE-NOTES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/build.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/index.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/tomcat.css" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/tomcat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/tomcat.svg" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/ROOT/tomcat.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/BUILDING.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/BUILDING.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/RELEASE-NOTES.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/RELEASE-NOTES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/RUNNING.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/RUNNING.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/aio.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/aio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/api/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/api/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/build.xml.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/build.xml.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/deployment.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/deployment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/installation.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/installation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/introduction.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/introduction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/processes.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/processes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/build.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/docs/README.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/docs/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/src/mypackage/Hello.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/src/mypackage/Hello.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/web/hello.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/web/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/web/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/sample/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/source.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/source.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/web.xml.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/appdev/web.xml.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/apr.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/apr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/overview.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/requestProcess.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/requestProcess.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/startup.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/startup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/startup/serverStartup.txt" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/architecture/startup/serverStartup.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/balancer-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/balancer-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/building.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/building.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/cgi-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/cgi-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/changelog.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/changelog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/class-loader-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/class-loader-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/cluster-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/cluster-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/comments.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/comments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/ajp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/ajp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/automatic-deployment.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/automatic-deployment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-channel.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-channel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-deployer.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-deployer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-interceptor.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-interceptor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-listener.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-listener.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-manager.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-membership.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-membership.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-receiver.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-receiver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-sender.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-sender.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-valve.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster-valve.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cluster.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/context.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/context.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cookie-processor.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/cookie-processor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/credentialhandler.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/credentialhandler.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/engine.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/engine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/executor.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/executor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/filter.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/globalresources.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/globalresources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/host.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/host.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/http.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/http.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/jar-scan-filter.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/jar-scan-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/jar-scanner.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/jar-scanner.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/listeners.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/listeners.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/loader.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/loader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/manager.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/realm.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/resources.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/server.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/server.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/service.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/sessionidgenerator.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/sessionidgenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/systemprops.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/systemprops.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/valve.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/config/valve.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/connectors.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/connectors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/default-servlet.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/default-servlet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/deployer-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/deployer-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/developers.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/developers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/elapi/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/elapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/extras.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/extras.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-admin-apps.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-admin-apps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-admin-objects.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-admin-objects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-admin-opers.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-admin-opers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-default.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-jdbc-realm.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-jdbc-realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-jndi-realm.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-jndi-realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-memory-realm.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/fs-memory-realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/mbean-names.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/funcspecs/mbean-names.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/html-manager-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/html-manager-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/images/docs-stylesheet.css" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/images/docs-stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/images/fonts/fonts.css" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/images/fonts/fonts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/images/tomcat.svg" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/images/tomcat.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/introduction.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/introduction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jasper-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jasper-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jdbc-pool.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jdbc-pool.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jndi-datasource-examples-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jndi-datasource-examples-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jndi-resources-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jndi-resources-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jspapi/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/jspapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/logging.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/logging.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/manager-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/manager-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/maven-jars.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/maven-jars.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/mbeans-descriptor-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/mbeans-descriptor-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/monitoring.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/monitoring.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/proxy-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/proxy-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/realm-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/realm-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/rewrite.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/rewrite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/security-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/security-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/security-manager-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/security-manager-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/servletapi/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/servletapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/setup.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/setup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/ssi-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/ssi-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/ssl-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/ssl-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/developers.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/developers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/faq.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/interceptors.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/interceptors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/introduction.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/introduction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/membership.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/membership.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/setup.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/setup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/status.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/status.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/transport.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/tribes/transport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/virtual-hosting-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/virtual-hosting-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/web-socket-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/web-socket-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/websocketapi/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/websocketapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/windows-auth-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/windows-auth-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/windows-service-howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/docs/windows-service-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/CookieExample.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/CookieExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/HelloWorldExample.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/HelloWorldExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings.properties" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_en.properties" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_fr.properties" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_fr.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_pt.properties" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/LocalStrings_pt.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/RequestHeaderExample.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/RequestHeaderExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/RequestInfoExample.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/RequestInfoExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/RequestParamExample.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/RequestParamExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/ServletToJsp.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/ServletToJsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/SessionExample.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/SessionExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async0.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async0.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async1.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async2.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async3.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Async3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Stockticker.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/async/Stockticker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/Entries.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/Entries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/Entry.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/JspCalendar.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/JspCalendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/TableBean.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/cal/TableBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/chat/ChatServlet.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/chat/ChatServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/checkbox/CheckTest.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/checkbox/CheckTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/colors/ColorGameBean.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/colors/ColorGameBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/dates/JspCalendar.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/dates/JspCalendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/error/Smart.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/error/Smart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/FooTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/FooTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/LogTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/LogTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/ShowSource.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/ShowSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/ValuesTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/examples/ValuesTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/filters/ExampleFilter.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/filters/ExampleFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/listeners/ContextListener.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/listeners/ContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/listeners/SessionListener.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/listeners/SessionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/num/NumberGuessBean.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/num/NumberGuessBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/sessions/DummyCart.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/sessions/DummyCart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/util/CookieFilter.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/util/CookieFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/util/HTMLFilter.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/util/HTMLFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/validators/DebugValidator.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/validators/DebugValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/servers.json" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/echo/servers.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/Direction.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/Direction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/Location.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/Snake.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/Snake.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp/applet/Clock2.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp/applet/Clock2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp/debug-taglib.tld" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp/debug-taglib.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp/example-taglib.tld" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp/example-taglib.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp2/jsp2-example-taglib.tld" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/jsp2/jsp2-example-taglib.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/tags/displayProducts.tag" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/tags/displayProducts.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/tags/helloWorld.tag" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/tags/helloWorld.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/tags/panel.tag" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/tags/panel.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async1.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async1.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async1.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async3.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async3.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/async3.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/index.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/index.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/async/index.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/Entries.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/Entries.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/Entry.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/Entry.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/JspCalendar.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/JspCalendar.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/TableBean.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/TableBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal1.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal1.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal1.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal2.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal2.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/cal2.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/calendar.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/login.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/cal/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/CheckTest.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/CheckTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/check.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/check.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/checkresult.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/checkresult.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/checkresult.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/checkresult.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/cresult.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/checkbox/cresult.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/ColorGameBean.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/ColorGameBean.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/clr.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/clr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/colors.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/colors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/colrs.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/colrs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/colrs.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/colors/colrs.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/dates/date.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/dates/date.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/dates/date.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/dates/date.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/dates/date.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/dates/date.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/er.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/er.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/err.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/err.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/err.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/err.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/error.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/errorpge.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/errorpge.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/errorpge.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/error/errorpge.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/forward.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/forward.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/forward.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/forward.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/fwd.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/fwd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/one.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/one.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/one.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/one.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/two.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/forward/two.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/foo.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/foo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/foo.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/foo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/foo.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/foo.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/inc.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/inc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/include.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/include.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/include.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/include/include.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/Functions.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/Functions.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/ValuesBean.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/ValuesBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/ValuesTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/ValuesTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-arithmetic.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-arithmetic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-comparisons.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-comparisons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/composite.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/composite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/composite.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/composite.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/composite.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/composite.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/functions.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/functions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/functions.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/functions.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/functions.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/functions.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/implicit-objects.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/implicit-objects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/implicit-objects.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/implicit-objects.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/implicit-objects.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/el/implicit-objects.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/FooBean.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/FooBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/HelloWorldSimpleTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/HelloWorldSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/ShuffleSimpleTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/ShuffleSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/TileSimpleTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/TileSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/jspattribute.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/jspattribute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/shuffle.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/shuffle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/basic.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/basic.jspx" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/basic.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/basic.jspx.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/basic.jspx.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/svgexample.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/svgexample.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/textRotate.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/textRotate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/textRotate.jspx" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/textRotate.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/textRotate.jspx.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/jspx/textRotate.jspx.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/EchoAttributesTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/EchoAttributesTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/coda.jspf" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/coda.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/coda.jspf.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/coda.jspf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/config.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/config.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/config.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/config.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/config.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/config.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/dynamicattrs.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/dynamicattrs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/prelude.jspf" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/prelude.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/prelude.jspf.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/misc/prelude.jspf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/BookBean.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/BookBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/FindBookSimpleTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/FindBookSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/Functions.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/Functions.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/HelloWorldSimpleTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/HelloWorldSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/RepeatSimpleTag.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/RepeatSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/book.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/book.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/book.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/book.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/book.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/book.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/hello.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/hello.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/hello.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/hello.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/hello.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/repeat.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/repeat.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/repeat.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/repeat.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/simpletag/repeat.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/displayProducts.tag.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/displayProducts.tag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/hello.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/hello.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/hello.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/hello.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/hello.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/helloWorld.tag.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/helloWorld.tag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.tag.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/panel.tag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/products.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/products.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/products.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/products.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/products.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsp2/tagfiles/products.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/ServletToJsp.java.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/ServletToJsp.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/hello.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/hello.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/hello.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/jts.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/jsptoserv/jts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/num/numguess.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/num/numguess.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/num/numguess.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/num/numguess.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/num/numguess.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/num/numguess.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/applet/Clock2.java" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/applet/Clock2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/plugin.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/plugin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/plugin.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/plugin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/plugin.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/plugin/plugin.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/error.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/error.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/error.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/error.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/index.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/index.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/index.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/login.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/login.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/security/protected/login.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/DummyCart.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/DummyCart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/carts.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/carts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/carts.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/carts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/carts.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/carts.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/crt.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/sessions/crt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/simpletag/foo.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/simpletag/foo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/simpletag/foo.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/simpletag/foo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/simpletag/foo.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/simpletag/foo.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/snp/snoop.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/snp/snoop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/snp/snoop.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/snp/snoop.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/snp/snoop.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/snp/snoop.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/source.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/source.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/source.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/source.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/choose.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/choose.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/choose.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/choose.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/choose.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/choose.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/foreach.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/foreach.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/foreach.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/foreach.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/foreach.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/foreach.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/howto.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/if.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/if.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/if.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/if.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/if.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/if.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/notes.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/tagplugin/notes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/xml/xml.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/xml/xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/xml/xml.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/xml/xml.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/xml/xml.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/jsp/xml/xml.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/index.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/index.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/index.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/login.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/login.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/login.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/post.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/post.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/post.jsp.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/chat/post.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/cookies.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/cookies.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/helloworld.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/helloworld.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/index.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/nonblocking/bytecounter.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/nonblocking/bytecounter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/reqheaders.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/reqheaders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/reqinfo.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/reqinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/reqparams.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/reqparams.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/sessions.html" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/servlets/sessions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/chat.xhtml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/chat.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/drawboard.xhtml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/drawboard.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/echo.xhtml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/echo.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/index.xhtml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/snake.xhtml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/examples/websocket/snake.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/META-INF/context.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/jsp/401.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/jsp/401.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/jsp/403.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/jsp/403.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/jsp/404.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/jsp/404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/index.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/manager.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/host-manager/manager.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/META-INF/context.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/401.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/401.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/403.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/403.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/404.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/connectorCiphers.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/connectorCiphers.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/sessionDetail.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/sessionDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/sessionsList.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/jsp/sessionsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/index.jsp" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/status.xsd" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/status.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/xform.xsl" afterPath="$PROJECT_DIR$/Librairies/apache-tomcat-8.0.28/webapps/manager/xform.xsl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/mysql-connector-java-5.1.37/README.txt" afterPath="$PROJECT_DIR$/Librairies/mysql-connector-java-5.1.37/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/mysql-connector-java-5.1.37/docs/README.txt" afterPath="$PROJECT_DIR$/Librairies/mysql-connector-java-5.1.37/docs/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Librairies/mysql-connector-java-5.1.37/src/doc/sources/pom.xml" afterPath="$PROJECT_DIR$/Librairies/mysql-connector-java-5.1.37/src/doc/sources/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SupTrip.iml" afterPath="$PROJECT_DIR$/SupTrip.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/signin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/signin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/CampusDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/CampusDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/TripDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/TripDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaCampusDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaCampusDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaTripDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaTripDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaUserDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/Campus.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/Campus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/User.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/HomeServlet.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/HomeServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LogoutServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/ManageCampusServlet.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/ManageCampusServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/RemoveCampusServlet.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/RemoveCampusServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/RemoveTripServlet.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/RemoveTripServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/SigninServlet.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/SigninServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/signin.jsp" afterPath="$PROJECT_DIR$/web/signin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java" />
     </list>
     <ignored path="SupCommerce.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -529,14 +48,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16832918">
-              <caret line="20" column="121" selection-start-line="20" selection-start-column="121" selection-end-line="20" selection-end-column="121" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
                 <element signature="method#doPost#0;class#LoginServlet#0" expanded="false" />
                 <element signature="method#doGet#0;class#LoginServlet#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TripRessource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28054863">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -603,7 +134,6 @@
         <option value="$PROJECT_DIR$/web/auth/myBag.jsp" />
         <option value="$PROJECT_DIR$/web/auth/myProfile.jsp" />
         <option value="$PROJECT_DIR$/web/auth/listTrip.jsp" />
-        <option value="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java" />
         <option value="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/DaoFactory.java" />
         <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaTripDao.java" />
@@ -627,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/User.java" />
         <option value="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java" />
       </list>
     </option>
   </component>
@@ -671,9 +202,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -702,61 +233,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -775,28 +252,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="suptrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="suptrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -832,15 +287,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="suptrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listener" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -854,85 +301,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="suptrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="suptrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="suptrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SupTrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="suptrip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jpa" />
+              <option name="myItemId" value="Librairies" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -941,7 +310,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1583,7 +952,8 @@
       <workItem from="1449604545651" duration="113000" />
       <workItem from="1449604674719" duration="75000" />
       <workItem from="1449604766230" duration="11828000" />
-      <workItem from="1449630344590" duration="1163000" />
+      <workItem from="1449630344590" duration="1549000" />
+      <workItem from="1449672336358" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies into project&#10;(Tomcat, Hibernate, mySqlConnector, Jersey)">
       <created>1449431770331</created>
@@ -1615,11 +985,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449434817463</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="login / signIn&#10;errors handling&#10;dao (finished + new methods)&#10;password encryption in DB (SHA-1)">
+      <created>1449631799422</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1449631799422</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111044000" />
+    <option name="totallyTimeSpent" value="112078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1632,34 +1008,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.33012047" sideWeight="0.40694445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4626506" sideWeight="0.8972222" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.328125" sideWeight="0.59305555" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24031007" sideWeight="0.68149036" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24031007" sideWeight="0.68149036" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="false" weight="0.24391988" sideWeight="0.3185096" order="2" side_tool="false" content_ui="tabs" x="549" y="19" width="341" height="816" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24391988" sideWeight="0.3185096" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4626506" sideWeight="0.8972222" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451922" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1704,8 +1080,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="adding dependencies into project&#10;(Tomcat, Hibernate, mySqlConnector, Jersey)" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding dependencies into project&#10;(Tomcat, Hibernate, mySqlConnector, Jersey)" />
+    <MESSAGE value="login / signIn&#10;errors handling&#10;dao (finished + new methods)&#10;password encryption in DB (SHA-1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="login / signIn&#10;errors handling&#10;dao (finished + new methods)&#10;password encryption in DB (SHA-1)" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1718,6 +1100,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#doPost#0;class#LoginServlet#0" expanded="false" />
+            <element signature="method#doGet#0;class#LoginServlet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaCampusDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1861,18 +1254,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.75">
           <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1880,7 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16666667">
           <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,7 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2010,7 +1393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67866325">
           <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2018,7 +1400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73264784">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2026,7 +1407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2034,7 +1414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55912596">
           <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="134" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2042,7 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2050,7 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2058,14 +1435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="method#addUser#0;class#JpaUserDao#0" expanded="false" />
-            <element signature="method#updateUser#0;class#JpaUserDao#0" expanded="false" />
-            <element signature="method#findUserById#0;class#JpaUserDao#0" expanded="false" />
-            <element signature="method#getAllUsers#0;class#JpaUserDao#0" expanded="false" />
-            <element signature="method#removeUser#0;class#JpaUserDao#0" expanded="false" />
-            <element signature="method#findUsersByCampus#0;class#JpaUserDao#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2073,19 +1442,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.617207">
           <caret line="40" column="54" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16832918">
-          <caret line="20" column="121" selection-start-line="20" selection-start-column="121" selection-end-line="20" selection-end-column="121" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="method#doPost#0;class#LoginServlet#0" expanded="false" />
             <element signature="method#doGet#0;class#LoginServlet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28054863">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -23,28 +23,31 @@
         <div class="jumbotron" style="height: 100%;margin-left: 0px;margin-right: 0px;width: 100%;">
             <h1>Sign in</h1>
             <h2 class="form-signin-heading"> Please fill in the form to register </h2>
+
             <form class="form-signin" role="form" action="/signin" method="post">
                 <p>
                     <input style="width: 300px" type="text" class="form-control" placeholder="ID Booster" name="idBooster">
                     <% if (idError) { %>
                         <div style="width: 300px" class="alert alert-danger" role="alert">Your ID Booster must be a six-digits number!</div>
                     <%}%>
-                    <% if (boosterError) { %>
-                        <div style="width: 300px" class="alert alert-danger" role="alert">Your ID Booster is already used!</div>
-                    <%}%>
+                <% if (boosterError) { %>
+                <div style="width: 300px" class="alert alert-danger" role="alert">Your ID Booster is already used!</div>
+                <%}%>
 
                 </p>
                 <p>
                     <input style="width: 300px" type="text" class="form-control" placeholder="first name" name="firstName">
                     <input style="width: 300px" type="text" class="form-control" placeholder="last name" name="lastName">
                     <input style="width: 300px" type="text" class="form-control" placeholder="email" name="email">
-                    <% if (emptyError) { %>
-                        <div style="width: 300px" class="alert alert-danger" role="alert">You must fill every field!</div>
-                    <%}%>
+                        <% if (emptyError) { %>
+
+                <div style="width: 300px" class="alert alert-danger" role="alert">You must fill every field!</div>
+                <%}%>
                     <input style="width: 300px" type="password" class="form-control" placeholder="password" name="password">
                     <input style="width: 300px" type="password" class="form-control" placeholder="repeat password" name="passwordBis">
-                    <% if (passwordError) { %>
-                        <div style="width: 300px" class="alert alert-danger" role="alert">Passwords don't match or are empty!</div>
+                <% if (passwordError) { %>
+                <div style="width: 300px" class="alert alert-danger" role="alert">Passwords don't match or are empty!
+                </div>
                     <%}%>
                 <div class="checkbox">
                     <label>
