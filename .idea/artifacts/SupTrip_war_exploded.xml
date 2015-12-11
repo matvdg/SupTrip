@@ -14,6 +14,7 @@
           <element id="file-copy" path="$PROJECT_DIR$/Librairies/commons-codec-1.4.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/Librairies/commons-codec-1.2.jar" />
           <element id="library" level="project" name="commons-codec-1.10" />
+          <element id="library" level="project" name="gson-2.5" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="SupTrip/web/Web" />

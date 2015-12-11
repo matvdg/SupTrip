@@ -21,7 +21,6 @@ public class JpaTripDao implements TripDao {
     @Override
     public void addTrip(Trip trip) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
@@ -36,11 +35,10 @@ public class JpaTripDao implements TripDao {
     @Override
     public void updateTrip(Trip trip) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
-            em.persist(trip);
+            em.merge(trip);
             t.commit();
         } finally {
             if (t.isActive()) t.rollback();
@@ -52,9 +50,7 @@ public class JpaTripDao implements TripDao {
     @Override
     public Trip findTripById(int id) {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         Trip trip = null;
         try {
             t.begin();
@@ -71,11 +67,8 @@ public class JpaTripDao implements TripDao {
     @Override
     public List<Trip> getAllTrips() {
         EntityManager em = emf.createEntityManager();
-
         EntityTransaction t = em.getTransaction();
-
         List<Trip> myArrayList = null;
-
         try {
             t.begin();
             Query query = em.createQuery("SELECT trips FROM Trip AS trips");
@@ -104,6 +97,46 @@ public class JpaTripDao implements TripDao {
             em.close();
         }
 
+    }
+
+    @Override
+    public int travellersNumberById(Trip trip) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction t = em.getTransaction();
+        List<Trip> myArrayList = null;
+        try {
+            t.begin();
+            Query query = em.createQuery("SELECT t FROM Trip t JOIN FETCH t.travellers WHERE t.id = (:id)");
+            query.setParameter("id",trip.getId());
+            myArrayList = query.getResultList();
+            t.commit();
+        } finally {
+            if (t.isActive()) t.rollback();
+            em.close();
+        }
+        return myArrayList.size();
+    }
+
+    @Override
+    public void removeTripById(int id) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction t = em.getTransaction();
+        Trip trip = null;
+        try {
+            t.begin();
+            trip = em.find(Trip.class,id);
+            t.commit();
+        } finally {
+            if (t.isActive()) t.rollback();
+        }
+        try {
+            t.begin();
+            em.remove(trip);
+            t.commit();
+        } finally {
+            if (t.isActive()) t.rollback();
+            em.close();
+        }
     }
 
 }

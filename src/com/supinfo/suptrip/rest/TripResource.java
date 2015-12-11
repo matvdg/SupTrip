@@ -8,18 +8,15 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/trips")
-public class TripRessource {
+public class TripResource {
 
-
-//test
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public String getAllProductsInJson(){
-        String products = "";
-        return products;
+    public String getAllTrips()  {
+        String json = "";
+        return json;
     }
-
 
     @GET
     @Path("/{productId}")

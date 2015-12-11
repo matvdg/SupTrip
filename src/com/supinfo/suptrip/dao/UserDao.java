@@ -1,6 +1,5 @@
 package com.supinfo.suptrip.dao;
 
-import com.supinfo.suptrip.entity.Campus;
 import com.supinfo.suptrip.entity.User;
 
 import java.util.List;
@@ -32,9 +31,4 @@ public interface UserDao {
      */
     void removeUser(User user);
 
-
-    /**
-     * Find users by campus
-     */
-    List<User> findUsersByCampus(Campus campus);
 }

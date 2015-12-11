@@ -13,9 +13,19 @@
     <%
         List<Campus> campuses = (List<Campus>) request.getAttribute("campuses");
         List<Integer> counters = (List<Integer>) request.getAttribute("counters");
+        if (session.getAttribute("removeError") != null) {
+            boolean removeError = (boolean) session.getAttribute("removeError");
+            if (removeError) { %>
+                <script>
+                    alert('Impossible to remove a campus you\'re part of.');
+                </script>
+            <%}
+            session.setAttribute("removeError", false);
+        }
     %>
 
-    <form method="post" action="manageCampus">
+
+    <form method="post" action="/auth/manageCampus">
         <div class="jumbotron">
             <h1>Add a new campus</h1>
             <p>

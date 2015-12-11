@@ -20,10 +20,10 @@
 <jsp:include page="header.jsp" />
 
 <%
-    int campuses = (int) request.getAttribute("campuses");
-    int students = (int) request.getAttribute("students");
-    int trips = 0;
-    int connexions = 0;
+    int campuses = (int) session.getAttribute("campuses");
+    int students = (int) session.getAttribute("students");
+    int trips = (int) session.getAttribute("trips");
+    int connexions = (int) session.getAttribute("connexions");
 %>
 
 
@@ -63,6 +63,8 @@
 
 
 </div>
+
+
 
 
 

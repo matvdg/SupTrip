@@ -1,7 +1,6 @@
 package com.supinfo.suptrip.dao.jpa;
 
 import com.supinfo.suptrip.dao.UserDao;
-import com.supinfo.suptrip.entity.Campus;
 import com.supinfo.suptrip.entity.User;
 
 import javax.persistence.EntityManager;
@@ -39,7 +38,7 @@ public class JpaUserDao implements UserDao {
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
-            em.persist(user);
+            em.merge(user);
             t.commit();
         } finally {
             if (t.isActive()) t.rollback();
@@ -70,7 +69,7 @@ public class JpaUserDao implements UserDao {
         List<User> myArrayList = null;
         try {
             t.begin();
-            Query query = em.createQuery("SELECT c FROM Campus AS c");
+            Query query = em.createQuery("SELECT users FROM User AS users");
             myArrayList = query.getResultList();
             t.commit();
         } finally {
@@ -94,22 +93,5 @@ public class JpaUserDao implements UserDao {
         }
     }
 
-    @Override
-    public List<User> findUsersByCampus(Campus campus) {
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction t = em.getTransaction();
-        List<User> myArrayList = null;
-        try {
-            t.begin();
-            Query query = em.createQuery("SELECT users FROM User AS users WHERE users.campus = :campus");
-            query.setParameter("campus", campus);
-            myArrayList = query.getResultList();
-            t.commit();
-        } finally {
-            if (t.isActive()) t.rollback();
-            em.close();
-        }
-        return myArrayList;
-    }
 
 }

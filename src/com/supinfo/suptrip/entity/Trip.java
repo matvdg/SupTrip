@@ -17,13 +17,14 @@ public class Trip implements Serializable {
 
     private Date departureTime;
     private Date arrivalTime;
+    private float price;
 
     @ManyToOne(targetEntity = Campus.class)
-    @JoinColumn(name = "id_origin")
+    @JoinColumn(name = "origin_id")
     private Campus origin;
 
     @ManyToOne(targetEntity = Campus.class)
-    @JoinColumn(name = "id_destination")
+    @JoinColumn(name = "destination_id")
     private Campus destination;
 
     @ManyToMany(targetEntity = User.class)
@@ -83,6 +84,14 @@ public class Trip implements Serializable {
 
     public void setTravellers(List<User> travellers) {
         this.travellers = travellers;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
     }
 
 }

@@ -4,6 +4,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -19,17 +20,14 @@ public class User implements Serializable {
     private boolean admin;
 
     @ManyToOne
-    @JoinColumn(name = "id_campus")
-
+    @JoinColumn(name = "campus_id")
     private Campus campus;
 
-/*
-    @ManyToMany(mappedBy = "users")
+    @ManyToMany(mappedBy = "travellers")
     private List<Trip> trips;
 
-*/
-    //constructor
 
+    //constructors
     public User() {
 
     }
@@ -46,15 +44,6 @@ public class User implements Serializable {
 
 
     //getters & setters
-    /*
-    public List<Trip> getTrips() {
-        return trips;
-    }
-
-    public void setTrips(List<Trip> trips) {
-        this.trips = trips;
-    }
-*/
     public int getId() {
         return id;
     }
@@ -92,15 +81,7 @@ public class User implements Serializable {
     }
 
     public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public boolean getAdmin() {
-        return admin;
-    }
-
-    public void setAdmin(Boolean admin) {
-        this.admin = admin;
+        this.password = DigestUtils.sha1Hex(password);;
     }
 
     public Campus getCampus() {
@@ -111,5 +92,19 @@ public class User implements Serializable {
         this.campus = campus;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
 
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
+    public List<Trip> getTrips() {
+        return trips;
+    }
+
+    public void setTrips(List<Trip> trips) {
+        this.trips = trips;
+    }
 }

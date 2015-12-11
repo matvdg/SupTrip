@@ -1,7 +1,6 @@
 package com.supinfo.suptrip.dao.jpa;
 
 import com.supinfo.suptrip.dao.CampusDao;
-import com.supinfo.suptrip.dao.DaoFactory;
 import com.supinfo.suptrip.entity.Campus;
 
 import javax.persistence.EntityManager;
@@ -38,7 +37,7 @@ public class JpaCampusDao implements CampusDao {
         EntityTransaction t = em.getTransaction();
         try {
             t.begin();
-            em.persist(campus);
+            em.merge(campus);
             t.commit();
         } finally {
             if (t.isActive()) t.rollback();
@@ -69,7 +68,7 @@ public class JpaCampusDao implements CampusDao {
         List<Campus> myArrayList = null;
         try {
             t.begin();
-            Query query = em.createQuery("SELECT c FROM Campus AS c");
+            Query query = em.createQuery("SELECT campus FROM Campus AS campus");
             myArrayList = query.getResultList();
             t.commit();
         } finally {
@@ -97,9 +96,17 @@ public class JpaCampusDao implements CampusDao {
     public void removeCampusById(int id) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
+        Campus campus = null;
         try {
             t.begin();
-            em.remove(DaoFactory.getCampusDao().findCampusById(id));
+            campus = em.find(Campus.class,id);
+            t.commit();
+        } finally {
+            if (t.isActive()) t.rollback();
+        }
+        try {
+            t.begin();
+            em.remove(campus);
             t.commit();
         } finally {
             if (t.isActive()) t.rollback();

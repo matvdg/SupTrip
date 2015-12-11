@@ -1,11 +1,13 @@
 package com.supinfo.suptrip.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "campuses")
+@XmlRootElement
 public class Campus implements Serializable {
 
     // properties
@@ -14,14 +16,14 @@ public class Campus implements Serializable {
     private int id;
     private String name;
 
-    @OneToMany(cascade = {CascadeType.REMOVE}, mappedBy = "campus")
+    @OneToMany(cascade = {CascadeType.REMOVE}, mappedBy = "campus", fetch=FetchType.EAGER )
     private List<User> users;
 
-    /*@OneToMany(mappedBy = "campus")
+    @OneToMany(cascade = {CascadeType.REMOVE}, mappedBy = "origin", fetch=FetchType.LAZY )
     private List<Trip> originTrips;
 
-    @OneToMany(mappedBy = "campus")
-    private List<Trip> destinationTrips;*/
+    @OneToMany(cascade = {CascadeType.REMOVE}, mappedBy = "destination", fetch=FetchType.LAZY )
+    private List<Trip> destinationTrips;
 
 
     //constructor
@@ -53,7 +55,7 @@ public class Campus implements Serializable {
     public void setUsers(List<User> users) {
         this.users = users;
     }
-/*
+
     public List<Trip> getOriginTrips() {
         return originTrips;
     }
@@ -69,5 +71,5 @@ public class Campus implements Serializable {
     public void setDestinationTrips(List<Trip> destinationTrips) {
         this.destinationTrips = destinationTrips;
     }
-*/
+
 }
