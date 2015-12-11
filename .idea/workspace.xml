@@ -2,101 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8cfc632-a5a8-46ea-ad1c-439baedd9ff2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/CampusResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/GsonMessageBodyHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/UserResource.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/JQL.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/SupTrip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/UML SupTrip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/archi 3JVA.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/many to many.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/many to one.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/one to many.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/rest/TripRessource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/HomeServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/ListTripServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LoginServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/LogoutServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/ManageCampusServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/ManageTripServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/RemoveCampusServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/RemoveTripServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/SigninServlet.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/3JVA - SupTrip.pdf" afterPath="$PROJECT_DIR$/docs/3JVA - SupTrip.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/TripDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/TripDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/UserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/Campus.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/Campus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/Trip.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/Trip.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/User.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/filter/AuthentificateFilter.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/filter/AuthentificateFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/HomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ListTripServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ListTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/LogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ManageCampusServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ManageCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ManageTripServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/ManageTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveTripServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/RemoveTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/SigninServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/classes/com/supinfo/suptrip/servlet/SigninServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/TripDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/TripDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/UserDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaCampusDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaTripDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/dao/jpa/JpaUserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/Campus.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/Campus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/Trip.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/Trip.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/User.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/filter/AuthentificateFilter.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/filter/AuthentificateFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/HomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ListTripServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ListTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/LogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ManageCampusServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ManageCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ManageTripServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/ManageTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveCampusServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveTripServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/RemoveTripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/SigninServlet.class" afterPath="$PROJECT_DIR$/out/production/SupTrip/com/supinfo/suptrip/servlet/SigninServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SupTrip_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SupTrip_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Librairies/gson-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/SupTripUML.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/admin/ManageCampusServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/admin/ManageTripServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/admin/RemoveCampusServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/admin/RemoveTripServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/anonymous/HomeServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/anonymous/LoginServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/anonymous/SigninServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/auth/ListTripServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/auth/LogoutServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/auth/MyProfileServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/auth/myBag/AddToMyBagServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/auth/myBag/MyBagServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/auth/myBag/ProcessOrderServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/servlet/auth/myBag/RemoveFromMyBagServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/PopoverValidation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-datetimepicker.fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-datetimepicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SupTrip.iml" afterPath="$PROJECT_DIR$/SupTrip.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/SupTrip UML 3JVA.mdj" afterPath="$PROJECT_DIR$/docs/SupTrip UML 3JVA.mdj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/listTrip.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/listTrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/manageCampus.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/manageCampus.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/manageTrip.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/manageTrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/myBag.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/myBag.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/myProfile.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/auth/myProfile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/home.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/signin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SupTrip_war_exploded/signin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/TripDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/TripDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaCampusDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaCampusDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaTripDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaTripDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaUserDao.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/dao/jpa/JpaUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/Campus.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/Campus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/Trip.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/Trip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/User.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/supinfo/suptrip/filter/AuthentificateFilter.java" afterPath="$PROJECT_DIR$/src/com/supinfo/suptrip/filter/AuthentificateFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/auth/listTrip.jsp" afterPath="$PROJECT_DIR$/web/auth/listTrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/auth/manageCampus.jsp" afterPath="$PROJECT_DIR$/web/auth/manageCampus.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/auth/manageTrip.jsp" afterPath="$PROJECT_DIR$/web/auth/manageTrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/auth/myBag.jsp" afterPath="$PROJECT_DIR$/web/auth/myBag.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/auth/myProfile.jsp" afterPath="$PROJECT_DIR$/web/auth/myProfile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/home.jsp" afterPath="$PROJECT_DIR$/web/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/signin.jsp" afterPath="$PROJECT_DIR$/web/signin.jsp" />
     </list>
     <ignored path="SupCommerce.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1410,7 +1347,7 @@
       <workItem from="1449686767488" duration="5649000" />
       <workItem from="1449769359273" duration="144000" />
       <workItem from="1449772395759" duration="39394000" />
-      <workItem from="1449817435288" duration="421000" />
+      <workItem from="1449817435288" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies into project&#10;(Tomcat, Hibernate, mySqlConnector, Jersey)">
       <created>1449431770331</created>
@@ -1454,11 +1391,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449674347668</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="myProfile&#10;myBag&#10;listTrip&#10;add/remove Trip&#10;add/remove Bag&#10;filter admin&#10;security remove campus &#10;security add campus first time&#10;error validations everywhere&#10;datepickers in trips&#10;trips DB many to many lazy&#10;DAO improvements&#10;new architecture (more detailed) in servlets">
+      <created>1449818019546</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1449818019546</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158440000" />
+    <option name="totallyTimeSpent" value="158622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1549,7 +1492,8 @@
     <MESSAGE value="login / signIn&#10;errors handling&#10;dao (finished + new methods)&#10;password encryption in DB (SHA-1)" />
     <MESSAGE value="added CommonCodec Apache for SHA-1 encryption" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="myProfile&#10;myBag&#10;listTrip&#10;add/remove Trip&#10;add/remove Bag&#10;filter admin&#10;security remove campus &#10;security add campus first time&#10;error validations everywhere&#10;datepickers in trips&#10;trips DB many to many lazy&#10;DAO improvements&#10;new architecture (more detailed) in servlets" />
+    <option name="LAST_COMMIT_MESSAGE" value="myProfile&#10;myBag&#10;listTrip&#10;add/remove Trip&#10;add/remove Bag&#10;filter admin&#10;security remove campus &#10;security add campus first time&#10;error validations everywhere&#10;datepickers in trips&#10;trips DB many to many lazy&#10;DAO improvements&#10;new architecture (more detailed) in servlets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1611,6 +1555,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1626,6 +1571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,6 +1579,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1640,6 +1589,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50498754">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1647,6 +1599,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3553616">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1701,6 +1656,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1708,6 +1664,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1722,6 +1679,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1729,6 +1687,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="9" selection-start-line="96" selection-start-column="8" selection-end-line="113" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1736,6 +1695,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7755611">
           <caret line="136" column="43" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
+          <folding>
+            <element signature="method#removeTrip#0;class#JpaTripDao#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
