@@ -62,6 +62,34 @@ public class JpaCampusDao implements CampusDao {
     }
 
     @Override
+    public Campus findCampusByName(String name) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction t = em.getTransaction();
+        String search = "";
+        Campus campus = null;
+        if (name.length() > 2) {
+            search = name.toLowerCase();
+            search = search.substring(0, 1).toUpperCase() + search.substring(1);
+            try {
+                t.begin();
+                Query query = em.createQuery("SELECT campus FROM Campus AS campus WHERE campus.name = (:search)");
+                query.setParameter("search",search);
+                if (query.getResultList().size() >= 1) {
+                    System.out.println(query.getResultList());
+                    campus = (Campus) query.getSingleResult();
+                    System.out.println(campus.getName());
+                }
+                t.commit();
+            } finally {
+                if (t.isActive()) t.rollback();
+                em.close();
+            }
+        }
+        return campus;
+
+    }
+
+    @Override
     public List<Campus> getAllCampuses() {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();

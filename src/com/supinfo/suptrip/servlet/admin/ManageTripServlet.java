@@ -106,7 +106,7 @@ public class ManageTripServlet extends HttpServlet {
         }
 
         for (Trip trip : trips) {
-            counters.add(DaoFactory.getTripDao().travellersNumberById(trip));
+            counters.add(DaoFactory.getTripDao().travellersNumber(trip));
         }
         request.setAttribute("trips",trips);
         request.setAttribute("counters",counters);

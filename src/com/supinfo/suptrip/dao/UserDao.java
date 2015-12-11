@@ -1,5 +1,6 @@
 package com.supinfo.suptrip.dao;
 
+import com.supinfo.suptrip.entity.Trip;
 import com.supinfo.suptrip.entity.User;
 
 import java.util.List;
@@ -30,5 +31,16 @@ public interface UserDao {
      * Remove a user from the memory
      */
     void removeUser(User user);
+
+    /**
+     * Get user's trips (because User.getTrip is lazy loading)
+     */
+    List<Trip> getTrips(User user);
+
+    /**
+     *
+     * @param trip
+     */
+    void addTripToUser(Trip trip, User user);
 
 }

@@ -22,6 +22,11 @@ public interface CampusDao {
     Campus findCampusById(int id);
 
     /**
+     * Find a campus by name
+     */
+    Campus findCampusByName(String name);
+
+    /**
      * @return an unmodifiable list of all campuses stored in memory
      */
     List<Campus> getAllCampuses();

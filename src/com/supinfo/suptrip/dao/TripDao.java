@@ -35,7 +35,7 @@ public interface TripDao {
     /**
      * Return the number of traveller by trip
      */
-    int travellersNumberById(Trip trip);
+    int travellersNumber(Trip trip);
 
     /**
      * Remove a trip from the memory by ID

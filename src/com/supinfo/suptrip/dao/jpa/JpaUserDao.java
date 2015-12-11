@@ -1,6 +1,8 @@
 package com.supinfo.suptrip.dao.jpa;
 
+import com.supinfo.suptrip.dao.DaoFactory;
 import com.supinfo.suptrip.dao.UserDao;
+import com.supinfo.suptrip.entity.Trip;
 import com.supinfo.suptrip.entity.User;
 
 import javax.persistence.EntityManager;
@@ -91,6 +93,40 @@ public class JpaUserDao implements UserDao {
             if (t.isActive()) t.rollback();
             em.close();
         }
+    }
+
+    @Override
+    public List<Trip> getTrips(User user) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction t = em.getTransaction();
+        List<Trip> myArrayList = null;
+        try {
+            t.begin();
+            Query query = em.createQuery("SELECT user.trips FROM User AS user WHERE user.id = (:id)");
+            query.setParameter("id",user.getId());
+            myArrayList = (List<Trip>) query.getResultList();
+            t.commit();
+        } finally {
+            if (t.isActive()) t.rollback();
+            em.close();
+        }
+        return myArrayList;
+    }
+
+    @Override
+    public void addTripToUser(Trip trip, User user) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction t = em.getTransaction();
+        t.begin();
+        List<Trip> trips = DaoFactory.getUserDao().getTrips(user);
+        System.out.println(trips);
+        trips.add(trip);
+        System.out.println(trips);
+        user.setTrips(trips);
+        System.out.println();
+        em.merge(user);
+        t.commit();
+
     }
 
 

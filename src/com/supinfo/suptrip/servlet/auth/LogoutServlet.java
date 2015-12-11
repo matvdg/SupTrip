@@ -19,5 +19,9 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.removeAttribute("idBooster");
         response.sendRedirect("/home");
+        //empty the bag
+        if (session.getAttribute("myBag") != null) {
+            session.removeAttribute("myBag");
+        }
     }
 }
