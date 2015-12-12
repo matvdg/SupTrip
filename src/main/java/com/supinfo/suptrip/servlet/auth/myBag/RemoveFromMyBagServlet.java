@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@WebServlet(name = "RemoveFromMyBagServlet", urlPatterns = "/auth/removeFromMyBag")
+@WebServlet(name = "RemoveFromMyBagServlet", urlPatterns = "/supTrip/auth/removeFromMyBag")
 public class RemoveFromMyBagServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -29,7 +29,7 @@ public class RemoveFromMyBagServlet extends HttpServlet {
             }
         }
         session.setAttribute("myBag", newBag);
-        response.sendRedirect("/auth/myBag");
+        response.sendRedirect("/supTrip/auth/myBag");
     }
 
 }

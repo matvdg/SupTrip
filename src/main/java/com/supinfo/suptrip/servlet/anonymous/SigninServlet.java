@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-@WebServlet(name = "SigninServlet", urlPatterns = "/signin")
+@WebServlet(name = "SigninServlet", urlPatterns = "/supTrip/signin")
 public class SigninServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,22 +41,22 @@ public class SigninServlet extends HttpServlet {
                         User newUser = new User(idBooster, firstName, lastName, email, password, isAdmin, campus);
                         DaoFactory.getUserDao().addUser(newUser);
                         session.setAttribute("idBooster", Integer.toString(newUser.getId()));
-                        response.sendRedirect("/auth/listTrip");
+                        response.sendRedirect("/supTrip/auth/listTrip");
                     } else {
                         session.setAttribute("emptyError", true);
-                        response.sendRedirect("/signin");
+                        response.sendRedirect("/supTrip/signin");
                     }
                 } else {
                     session.setAttribute("passwordError", true);
-                    response.sendRedirect("/signin");
+                    response.sendRedirect("/supTrip/signin");
                 }
             } else {
                 session.setAttribute("boosterError", true);
-                response.sendRedirect("/signin");
+                response.sendRedirect("/supTrip/signin");
             }
         } catch (NumberFormatException e) {
             session.setAttribute("idError", true);
-            response.sendRedirect("/signin");
+            response.sendRedirect("/supTrip/signin");
         }
     }
 
@@ -88,7 +88,7 @@ public class SigninServlet extends HttpServlet {
         } else {
             session.setAttribute("emptyError", emptyError);
         }
-        RequestDispatcher rd = request.getRequestDispatcher("/signin.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/supTrip/signin.jsp");
         rd.forward(request,response);
     }
 

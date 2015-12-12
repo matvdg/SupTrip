@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-@WebServlet(name = "/MyProfileServlet", urlPatterns = "/auth/myProfile")
+@WebServlet(name = "/MyProfileServlet", urlPatterns = "/supTrip/auth/myProfile")
 public class MyProfileServlet extends HttpServlet {
 
 
@@ -41,14 +41,14 @@ public class MyProfileServlet extends HttpServlet {
                 currentUser.setCampus(campus);
                 DaoFactory.getUserDao().updateUser(currentUser);
                 session.setAttribute("emptyError", false);
-                response.sendRedirect("/auth/myProfile");
+                response.sendRedirect("/supTrip/auth/myProfile");
             } else {
                 session.setAttribute("emptyError", true);
-                response.sendRedirect("/auth/myProfile");
+                response.sendRedirect("/supTrip/auth/myProfile");
             }
         } else {
             session.setAttribute("passwordError", true);
-            response.sendRedirect("/auth/myProfile");
+            response.sendRedirect("/supTrip/auth/myProfile");
         }
     }
 
@@ -73,7 +73,7 @@ public class MyProfileServlet extends HttpServlet {
         } else {
             session.setAttribute("emptyError", emptyError);
         }
-        RequestDispatcher rd = request.getRequestDispatcher("/auth/myProfile.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/supTrip/auth/myProfile.jsp");
         rd.forward(request,response);
     }
 

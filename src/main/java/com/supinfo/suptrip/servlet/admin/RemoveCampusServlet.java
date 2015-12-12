@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet(name = "RemoveCampusServlet", urlPatterns = "/auth/removeCampus")
+@WebServlet(name = "RemoveCampusServlet", urlPatterns = "/supTrip/auth/removeCampus")
 public class RemoveCampusServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -29,7 +29,7 @@ public class RemoveCampusServlet extends HttpServlet {
                 session.setAttribute("removeError", true);
             }
         }
-        response.sendRedirect("/auth/manageCampus");
+        response.sendRedirect("/supTrip/auth/manageCampus");
 
     }
 }

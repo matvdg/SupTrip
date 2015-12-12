@@ -111,8 +111,8 @@
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
-                    <port>8888</port>
-                    <httpPort>8888</httpPort>
+                    <port>8080</port>
+                    <httpPort>8080</httpPort>
                 </configuration>
                 <version>2.2</version>
             </plugin>

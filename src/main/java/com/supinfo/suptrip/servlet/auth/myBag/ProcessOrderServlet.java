@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-@WebServlet(name = "ProcessOrderServlet", urlPatterns = "/auth/processOrder")
+@WebServlet(name = "ProcessOrderServlet", urlPatterns = "/supTrip/auth/processOrder")
 public class ProcessOrderServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,7 +26,7 @@ public class ProcessOrderServlet extends HttpServlet {
             DaoFactory.getUserDao().addTripToUser(trip, currentUser);
         }
         session.removeAttribute("myBag");
-        response.sendRedirect("/auth/myBag");
+        response.sendRedirect("/supTrip/auth/myBag");
     }
 
 }

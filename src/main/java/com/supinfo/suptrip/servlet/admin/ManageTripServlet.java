@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-@WebServlet(name = "ManageTripServlet", urlPatterns = "/auth/manageTrip")
+@WebServlet(name = "ManageTripServlet", urlPatterns = "/supTrip/auth/manageTrip")
 public class ManageTripServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -54,25 +54,25 @@ public class ManageTripServlet extends HttpServlet {
                         newTrip.setArrivalTime(arrival);
                         newTrip.setPrice(price);
                         DaoFactory.getTripDao().addTrip(newTrip);
-                        response.sendRedirect("/auth/manageTrip");
+                        response.sendRedirect("/supTrip/auth/manageTrip");
 
                     } catch (NumberFormatException e) {
                         session.setAttribute("priceError", true);
-                        response.sendRedirect("/auth/manageTrip");
+                        response.sendRedirect("/supTrip/auth/manageTrip");
                     }
                 } else {
                     session.setAttribute("dateError", true);
-                    response.sendRedirect("/auth/manageTrip");
+                    response.sendRedirect("/supTrip/auth/manageTrip");
                 }
             } else {
                 session.setAttribute("campusError", true);
-                response.sendRedirect("/auth/manageTrip");
+                response.sendRedirect("/supTrip/auth/manageTrip");
             }
         } catch (ParseException e) {
             System.out.println("error parsing");
             e.printStackTrace();
             session.setAttribute("dateError", true);
-            response.sendRedirect("/auth/manageTrip");
+            response.sendRedirect("/supTrip/auth/manageTrip");
         }
 
 
@@ -110,7 +110,7 @@ public class ManageTripServlet extends HttpServlet {
         }
         request.setAttribute("trips",trips);
         request.setAttribute("counters",counters);
-        RequestDispatcher rd = request.getRequestDispatcher("/auth/manageTrip.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/supTrip/auth/manageTrip.jsp");
         rd.forward(request,response);
     }
 

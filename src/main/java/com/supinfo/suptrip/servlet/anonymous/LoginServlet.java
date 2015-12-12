@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet(name = "LoginServlet", urlPatterns = "/login")
+@WebServlet(name = "LoginServlet", urlPatterns = "/supTrip/login")
 
 public class LoginServlet extends HttpServlet {
 
@@ -31,18 +31,18 @@ public class LoginServlet extends HttpServlet {
                 if (user.getPassword().equals(DigestUtils.shaHex(password))) {
                     session.setAttribute("authError", false);
                     session.setAttribute("idBooster", Integer.toString(user.getId()));
-                    response.sendRedirect("/auth/listTrip");
+                    response.sendRedirect("/supTrip/auth/listTrip");
                 } else {
                     session.setAttribute("authError", true);
-                    response.sendRedirect("/login");
+                    response.sendRedirect("/supTrip/login");
                 }
             } else {
                 session.setAttribute("boosterError", true);
-                response.sendRedirect("/login");
+                response.sendRedirect("/supTrip/login");
             }
         } catch (NumberFormatException e) {
             session.setAttribute("idError", true);
-            response.sendRedirect("/login");
+            response.sendRedirect("/supTrip/login");
         }
 
     }
@@ -68,7 +68,7 @@ public class LoginServlet extends HttpServlet {
         } else {
             session.setAttribute("boosterError", boosterError);
         }
-        RequestDispatcher rd = request.getRequestDispatcher("/login.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/supTrip/login.jsp");
         rd.forward(request,response);
     }
 }

@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "MyBagServlet", urlPatterns = "/auth/myBag")
+@WebServlet(name = "MyBagServlet", urlPatterns = "/supTrip/auth/myBag")
 public class MyBagServlet extends HttpServlet {
 
 
@@ -26,7 +26,7 @@ public class MyBagServlet extends HttpServlet {
             myBag = (List<Trip>) session.getAttribute("myBag");
         }
         session.setAttribute("myBag", myBag);
-        RequestDispatcher rd = request.getRequestDispatcher("/auth/myBag.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/supTrip/auth/myBag.jsp");
         rd.forward(request,response);
     }
 

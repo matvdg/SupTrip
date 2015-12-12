@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet(name = "HomeServlet", urlPatterns = "/home")
+@WebServlet(name = "HomeServlet", urlPatterns = "/supTrip/home")
 public class HomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -30,7 +30,7 @@ public class HomeServlet extends HttpServlet {
         session.setAttribute("students", students);
         session.setAttribute("trips", trips);
         session.setAttribute("connexions", nbOfConnection);
-        RequestDispatcher rd = request.getRequestDispatcher("/home.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/supTrip/home.jsp");
         rd.forward(request, response);
     }
 

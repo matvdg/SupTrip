@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "ListTripServlet", urlPatterns = "/auth/listTrip")
+@WebServlet(name = "ListTripServlet", urlPatterns = "/supTrip/auth/listTrip")
 public class ListTripServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,7 +26,7 @@ public class ListTripServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("filter",campus);
         }
-        response.sendRedirect("/auth/listTrip");
+        response.sendRedirect("/supTrip/auth/listTrip");
 
     }
 
@@ -50,7 +50,7 @@ public class ListTripServlet extends HttpServlet {
         }
         request.setAttribute("trips",trips);
         request.setAttribute("counters",counters);
-        RequestDispatcher rd = request.getRequestDispatcher("/auth/listTrip.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/supTrip/auth/listTrip.jsp");
         rd.forward(request,response);
     }
 
