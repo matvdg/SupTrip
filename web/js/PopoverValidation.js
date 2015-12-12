@@ -7,10 +7,6 @@ $.fn.goValidate = function() {
             regex: /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/
         },
 
-        name: {
-            regex: /^[a-z ,.'-]+$/
-        },
-
         booster: {
             regex: /^[0-9]{2,6}$/
         }

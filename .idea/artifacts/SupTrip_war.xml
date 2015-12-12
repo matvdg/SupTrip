@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SupTrip:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="supTrip-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SupTrip:war exploded" />
+    </root>
+  </artifact>
+</component>

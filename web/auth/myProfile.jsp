@@ -23,12 +23,11 @@
     Boolean emptyError = (Boolean) session.getAttribute("emptyError");
     User currentUser = (User) session.getAttribute("currentUser");
     DateFormat format = new SimpleDateFormat("dd/MM/yy '-' hh:mm a", Locale.ENGLISH);
-    List<Trip> trips = new ArrayList<Trip>();
-            //(List<Trip>) session.getAttribute("trips");
+    List<Trip> trips = (List<Trip>) session.getAttribute("trips");
 %>
 
 <div class="table-responsive">
-    <div class="jumbotron" style="height: 100%;margin-left: 0px;margin-right: 0px;width: 100%;">
+    <div class="jumbotron" style="margin-left: 0px;margin-right: 0px;width: 100%;">
         <h1><%=currentUser.getFirstName()+" "+currentUser.getLastName()+" - "+currentUser.getCampus().getName()%></h1>
         <h2 class="form-signin-heading"> Update my profile: </h2>
 
@@ -63,8 +62,8 @@
                 <input type="submit" value="Save changes" class="btn btn-primary btn-lg"/>
             </p>
         </form>
-        <h1>My SupTrips</h1>
-        <table style="margin-top: 0px;padding-top: 0px" class="table table-striped">
+        <h2>My SupTrips:</h2>
+        <table style="margin-top: 20px;padding-top: 10px" class="table table-striped">
             <thead>
             <tr>
                 <th>

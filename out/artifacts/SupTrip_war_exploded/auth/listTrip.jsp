@@ -20,14 +20,15 @@
         DateFormat format = new SimpleDateFormat("dd/MM/yy '-' hh:mm a", Locale.ENGLISH);
     %>
 
-    <form method="post" action="searchCampus">
+    <form method="post" action="/auth/listTrip">
         <div class="jumbotron">
             <h1>Look for a SupTrip</h1>
             <p>
-                <input type="text" name="name" placeholder="From/to campus" />
+                <input type="text" name="campus" placeholder="From/to campus" />
             </p>
             <p>
-                <input class="btn btn-primary btn-lg" type="submit" value="Search" />
+                <input class="btn btn-primary btn-lg" type="submit" value="Filter" />
+                <a class="btn btn-danger btn-lg" href="/auth/listTrip" role="button">Remove Filter</a>
             </p>
         </div>
 
@@ -89,6 +90,7 @@
         </tbody>
 
     </table>
+    <br><br><br><br>
 
 
 </div>

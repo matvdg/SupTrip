@@ -28,7 +28,7 @@
 
 
 <div class="table-responsive">
-    <div class="jumbotron" style="height: 100%;">
+    <div class="jumbotron"">
         <div style="text-align: center;">
             <img src="/assets/suptrip.png" style=" width: 200px;height: 200px;">
         </div>
@@ -39,7 +39,7 @@
         <p>
             <a class="btn btn-primary btn-lg" href="/login" role="button">Log in</a>
             OR
-            <a class="btn btn-primary btn-lg" href="/signin" role="button">Sign in</a>
+            <a class="btn btn-success btn-lg" href="/signin" role="button">Sign in</a>
         </p>
         <br>
         <h2>A few statistics :</h2>
@@ -55,7 +55,7 @@
             <span class="glyphicon glyphicon-plane"></span>
             <span class="badge"><%=trips%></span></a> SupTrips available
         </p>
-        <p>
+        <p style="padding-bottom: 200px">
             <span class="glyphicon glyphicon-globe"></span>
             <span class="badge"><%=connexions%></span></a> connexions
         </p>

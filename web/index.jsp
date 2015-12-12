@@ -9,12 +9,12 @@
     } else {
         getServletConfig().getServletContext().setAttribute("nbOfConnection",nbOfConnection);
     }
-    List<Campus> campuses = DaoFactory.getCampusDao().getAllCampuses();
         /*to create a new campus, we need to have at least one Admin
         BUT to create one Admin we need to have at least one campus
         so if the DB is empty (first time ever) we create one campus
         */
-    if (campuses.size() == 0) {
+
+    if (DaoFactory.getCampusDao().getCampusNumber() == 0) {
         Campus paris = new Campus();
         paris.setName("Paris");
         DaoFactory.getCampusDao().addCampus(paris);

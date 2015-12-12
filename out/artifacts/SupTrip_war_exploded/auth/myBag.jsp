@@ -79,20 +79,17 @@
 
     </table>
 
-    <form method="post" action="processOrder">
-        <div class="jumbotron">
-            <h2>Total : $<%=total%></h2>
-            <%
-                if (trips.isEmpty()) {
-                    %><p>Your bag is empty.</p><%
-                } else {
-                    %><p><input class="btn btn-primary btn-lg" type="submit" value="Process Order" /></p><%
-                }
-            %>
+    <div class="jumbotron">
+        <h2>Total : $<%=total%></h2>
+        <%
+            if (trips.isEmpty()) {
+                %><p>Your bag is empty.</p><%
+            } else {
+                %><a class="btn btn-primary btn-lg" href="/auth/processOrder" role="button">Process Order</a><%
+            }
+    %>
+    </div>
 
-        </div>
-
-    </form>
 
 
 </div>

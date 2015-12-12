@@ -23,75 +23,72 @@
     %>
 
 
-
-    <table class="table table-striped">
-
-        <thead>
-        <tr>
-            <th>
-                <span class="glyphicon glyphicon-education"></span> SupTrip ID
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-map-marker"></span> From
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-flag"></span> To
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-log-out"></span> Departure Time
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-log-in"></span> Arrival Time
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-usd"></span> Price
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-trash"></span> Remove
-            </th>
-
-        </tr>
-        </thead>
-
-        <tbody>
-        <%
-            int counter = 0;
-            for (Trip trip : trips) {
-
-        %>
-        <tr>
-            <td><b> <%= trip.getId() %> </b></td>
-            <td><b> <%= trip.getOrigin().getName() %> </b></td>
-            <td><b> <%= trip.getDestination().getName() %> </b></td>
-            <td><b> <%= format.format(trip.getDepartureTime()) %> </b></td>
-            <td><b> <%= format.format(trip.getArrivalTime()) %> </b></td>
-            <td><b> $<%= trip.getPrice() %> </b></td>
-            <td>
-                <a href="/auth/removeFromMyBag?id=<%= trip.getId() %>">
-                    <span class="glyphicon glyphicon-trash"></span> Remove
-                </a>
-            </td>
-
-        </tr>
-        <% counter++;
-        } %>
-        </tbody>
-
-    </table>
-
     <div class="jumbotron">
-        <h2>Total : $<%=total%></h2>
-        <%
-            if (trips.isEmpty()) {
-                %><p>Your bag is empty.</p><%
-            } else {
-                %><a class="btn btn-primary btn-lg" href="/auth/processOrder" role="button">Process Order</a><%
-            }
-    %>
+        <table class="table table-striped">
+
+            <thead>
+            <tr>
+                <th>
+                    <span class="glyphicon glyphicon-education"></span> SupTrip ID
+                </th>
+                <th>
+                    <span class="glyphicon glyphicon-map-marker"></span> From
+                </th>
+                <th>
+                    <span class="glyphicon glyphicon-flag"></span> To
+                </th>
+                <th>
+                    <span class="glyphicon glyphicon-log-out"></span> Departure Time
+                </th>
+                <th>
+                    <span class="glyphicon glyphicon-log-in"></span> Arrival Time
+                </th>
+                <th>
+                    <span class="glyphicon glyphicon-usd"></span> Price
+                </th>
+                <th>
+                    <span class="glyphicon glyphicon-trash"></span> Remove
+                </th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <%
+                int counter = 0;
+                for (Trip trip : trips) {
+
+            %>
+            <tr>
+                <td><b> <%= trip.getId() %> </b></td>
+                <td><b> <%= trip.getOrigin().getName() %> </b></td>
+                <td><b> <%= trip.getDestination().getName() %> </b></td>
+                <td><b> <%= format.format(trip.getDepartureTime()) %> </b></td>
+                <td><b> <%= format.format(trip.getArrivalTime()) %> </b></td>
+                <td><b> $<%= trip.getPrice() %> </b></td>
+                <td>
+                    <a href="/auth/removeFromMyBag?id=<%= trip.getId() %>">
+                        <span class="glyphicon glyphicon-trash"></span> Remove
+                    </a>
+                </td>
+
+            </tr>
+            <% counter++;
+            } %>
+            </tbody>
+
+        </table>
+
+
+            <h2>Total : $<%=total%></h2>
+            <%
+                if (trips.isEmpty()) {
+                    %><p>Your bag is empty.</p><%
+                } else {
+                    %><a class="btn btn-primary btn-lg" href="/auth/processOrder" role="button">Process Order</a><%
+                }
+        %>
     </div>
-
-
-
 </div>
 <jsp:include page="../footer.jsp" />
 

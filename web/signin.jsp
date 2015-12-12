@@ -19,7 +19,7 @@
     %>
 
     <div class="table-responsive">
-        <div class="jumbotron" style="height: 100%;margin-left: 0px;margin-right: 0px;width: 100%;">
+        <div class="jumbotron" style=margin-left: 0px;margin-right: 0px;width: 100%;">
             <h1>Sign in</h1>
             <h2 class="form-signin-heading"> Please fill in the form to register </h2>
 
@@ -67,10 +67,14 @@
 
                 </p>
                 <p>
-                    <input type="submit" value="Sign in" class="btn btn-primary btn-lg"/>
+                    <input type="submit" value="Sign in" class="btn btn-success btn-lg"/>
                 </p>
             </form>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
 

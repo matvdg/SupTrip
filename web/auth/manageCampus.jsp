@@ -17,8 +17,8 @@
             boolean removeError = (boolean) session.getAttribute("removeError");
             if (removeError) { %>
                 <script>
-                    alert('Impossible to remove a campus you\'re part of.');
-                </script>
+                    alert('Impossible to remove this campus because you\'re part of it.');
+                </script>i
             <%}
             session.setAttribute("removeError", false);
         }
@@ -34,47 +34,48 @@
             <p>
                 <input class="btn btn-primary btn-lg" type="submit" value="Add" />
             </p>
+
+            <table class="table table-striped">
+
+                <thead>
+                <tr>
+                    <th>
+                        <span class="glyphicon glyphicon-education"></span> Campus
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-user"></span> Number of students
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-trash"></span> Remove
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <%
+                    int counter = 0;
+                    for (Campus campus : campuses) {
+                %>
+                <tr>
+                    <td><b> <%= campus.getName() %> </b></td>
+                    <td><b> <%= counters.get(counter) %> </b></td>
+
+                    <td>
+                        <a href="/auth/removeCampus?id=<%= campus.getId() %>">
+                            <span class="glyphicon glyphicon-trash"></span> Remove
+                        </a>
+                    </td>
+                </tr>
+                <% counter++;
+                } %>
+                </tbody>
+
+            </table>
         </div>
 
     </form>
 
-    <table class="table table-striped">
 
-        <thead>
-        <tr>
-            <th>
-                <span class="glyphicon glyphicon-education"></span> Campus
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-user"></span> Number of students
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-trash"></span> Remove
-            </th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <%
-            int counter = 0;
-            for (Campus campus : campuses) {
-
-        %>
-        <tr>
-            <td><b> <%= campus.getName() %> </b></td>
-            <td><b> <%= counters.get(counter) %> </b></td>
-
-            <td>
-                <a href="/auth/removeCampus?id=<%= campus.getId() %>">
-                    <span class="glyphicon glyphicon-trash"></span> Remove
-                </a>
-            </td>
-        </tr>
-        <% counter++;
-        } %>
-        </tbody>
-
-    </table>
 
 
 </div>

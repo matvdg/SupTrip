@@ -90,67 +90,69 @@
             <p>
                 <input type="submit" value="Add" class="btn btn-primary btn-lg"/>
             </p>
+
+            <table class="table table-striped">
+
+                <thead>
+                <tr>
+                    <th>
+                        <span class="glyphicon glyphicon-education"></span> SupTrip ID
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-map-marker"></span> From
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-flag"></span> To
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-log-out"></span> Departure Time
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-log-in"></span> Arrival Time
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-user"></span> Number of students
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-usd"></span> Price
+                    </th>
+                    <th>
+                        <span class="glyphicon glyphicon-trash"></span> Remove
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <%
+                    int counter = 0;
+                    for (Trip trip : trips) {
+
+                %>
+                <tr>
+                    <td><b> <%= trip.getId() %> </b></td>
+                    <td><b> <%= trip.getOrigin().getName() %> </b></td>
+                    <td><b> <%= trip.getDestination().getName() %> </b></td>
+                    <td><b> <%= format.format(trip.getDepartureTime()) %> </b></td>
+                    <td><b> <%= format.format(trip.getArrivalTime()) %> </b></td>
+                    <td><b> <%= counters.get(counter) %> </b></td>
+                    <td><b> $<%= trip.getPrice() %> </b></td>
+                    <td>
+                        <a href="/auth/removeTrip?id=<%= trip.getId() %>">
+                            <span class="glyphicon glyphicon-trash"></span> Remove
+                        </a>
+                    </td>
+                </tr>
+                <% counter++;
+                } %>
+                </tbody>
+
+            </table>
+            <br><br><br><br>
         </div>
     </form>
 
 
-    <table class="table table-striped">
 
-        <thead>
-        <tr>
-            <th>
-                <span class="glyphicon glyphicon-education"></span> SupTrip ID
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-map-marker"></span> From
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-flag"></span> To
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-log-out"></span> Departure Time
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-log-in"></span> Arrival Time
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-user"></span> Number of students
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-usd"></span> Price
-            </th>
-            <th>
-                <span class="glyphicon glyphicon-trash"></span> Remove
-            </th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <%
-            int counter = 0;
-            for (Trip trip : trips) {
-
-        %>
-        <tr>
-            <td><b> <%= trip.getId() %> </b></td>
-            <td><b> <%= trip.getOrigin().getName() %> </b></td>
-            <td><b> <%= trip.getDestination().getName() %> </b></td>
-            <td><b> <%= format.format(trip.getDepartureTime()) %> </b></td>
-            <td><b> <%= format.format(trip.getArrivalTime()) %> </b></td>
-            <td><b> <%= counters.get(counter) %> </b></td>
-            <td><b> $<%= trip.getPrice() %> </b></td>
-            <td>
-                <a href="/auth/removeTrip?id=<%= trip.getId() %>">
-                    <span class="glyphicon glyphicon-trash"></span> Remove
-                </a>
-            </td>
-        </tr>
-        <% counter++;
-        } %>
-        </tbody>
-
-    </table>
-    <br><br><br><br>
 </div>
 <script type="text/javascript" src="/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
