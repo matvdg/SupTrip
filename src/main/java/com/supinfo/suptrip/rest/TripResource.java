@@ -12,7 +12,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/trip")
+@Path("/trips")
 public class TripResource {
     @GET
     @Produces("application/json")

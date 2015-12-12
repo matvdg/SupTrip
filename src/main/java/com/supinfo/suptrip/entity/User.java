@@ -25,7 +25,7 @@ public class User implements Serializable {
     private Campus campus;
 
     @ManyToMany
-    @JsonManagedReference
+    @JsonBackReference
     @JoinTable(
             name="trips_users",
             joinColumns={@JoinColumn(name="users_id", referencedColumnName="idBooster")},

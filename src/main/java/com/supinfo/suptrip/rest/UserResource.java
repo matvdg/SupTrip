@@ -11,7 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/user")
+@Path("/users")
 public class UserResource {
     @GET
     @Produces("application/json")
