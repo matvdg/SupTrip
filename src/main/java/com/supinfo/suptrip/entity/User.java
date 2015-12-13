@@ -13,7 +13,7 @@ public class User implements Serializable {
 
     // properties
     @Id
-    private int idBooster;
+    private Integer idBooster;
     private String firstName;
     private String lastName;
     private String email;
@@ -38,7 +38,7 @@ public class User implements Serializable {
 
     }
 
-    public User(int id, String firstName, String lastName, String email, String password, boolean admin, Campus campus) {
+    public User(Integer id, String firstName, String lastName, String email, String password, boolean admin, Campus campus) {
         this.idBooster = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -50,11 +50,11 @@ public class User implements Serializable {
 
 
     //getters & setters
-    public int getId() {
+    public Integer getId() {
         return idBooster;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.idBooster = id;
     }
 

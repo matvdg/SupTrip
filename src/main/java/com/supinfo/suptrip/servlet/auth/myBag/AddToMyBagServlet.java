@@ -18,7 +18,7 @@ import java.util.List;
 public class AddToMyBagServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        Integer id = Integer.parseInt(request.getParameter("id"));
         HttpSession session = request.getSession();
         Trip newItem = DaoFactory.getTripDao().findTripById(id);
         List<Trip> myBag = new ArrayList<Trip>();

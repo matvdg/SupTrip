@@ -48,7 +48,7 @@ public class JpaCampusDao implements CampusDao {
     }
 
     @Override
-    public Campus findCampusById(int id) {
+    public Campus findCampusById(Integer id) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         Campus campus = null;
@@ -123,7 +123,7 @@ public class JpaCampusDao implements CampusDao {
     }
 
     @Override
-    public void removeCampusById(int id) {
+    public void removeCampusById(Integer id) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         Campus campus = null;
@@ -145,7 +145,7 @@ public class JpaCampusDao implements CampusDao {
     }
 
     @Override
-    public int getStudentsNumber(Campus campus) {
+    public Integer getStudentsNumber(Campus campus) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         List<User> resultList = new ArrayList<>();
@@ -162,7 +162,7 @@ public class JpaCampusDao implements CampusDao {
     }
 
     @Override
-    public int getCampusNumber() {
+    public Integer getCampusNumber() {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         List<Campus> resultList = new ArrayList<>();

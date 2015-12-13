@@ -27,10 +27,10 @@ public class SigninServlet extends HttpServlet {
         String password = request.getParameter("password");
         String passwordBis = request.getParameter("passwordBis");
         boolean isAdmin = request.getParameter("admin") != null;
-        int idCampus = Integer.parseInt(request.getParameter("idCampus"));
+        Integer idCampus = Integer.parseInt(request.getParameter("idCampus"));
         Campus campus = DaoFactory.getCampusDao().findCampusById(idCampus);
         try {
-            int idBooster = Integer.parseInt(idBoosterString);
+            Integer idBooster = Integer.parseInt(idBoosterString);
             session.setAttribute("idError", false);
             if (DaoFactory.getUserDao().findUserById(idBooster) == null) {
                 session.setAttribute("boosterError", false);

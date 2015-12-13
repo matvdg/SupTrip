@@ -31,8 +31,8 @@ public class ManageTripServlet extends HttpServlet {
         String departureTime = request.getParameter("departureTime");
         String arrivalTime = request.getParameter("arrivalTime");
         String priceString = request.getParameter("price");
-        int idOrigin = Integer.parseInt(idCampusOrigin);
-        int idDestination = Integer.parseInt(idCampusDestination);
+        Integer idOrigin = Integer.parseInt(idCampusOrigin);
+        Integer idDestination = Integer.parseInt(idCampusDestination);
         DateFormat format = new SimpleDateFormat("dd MMMM yyyy '-' hh:mm a", Locale.ENGLISH);
         try {
             Date departure = format.parse(departureTime);

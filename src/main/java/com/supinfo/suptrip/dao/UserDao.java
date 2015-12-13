@@ -20,7 +20,7 @@ public interface UserDao {
     /**
      * Find a user by id
      */
-    User findUserById(int id);
+    User findUserById(Integer id);
 
     /**
      * @return an unmodifiable list of all users stored in memory

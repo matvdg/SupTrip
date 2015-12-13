@@ -13,7 +13,7 @@ public class Campus implements Serializable {
     // properties
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idCampus;
+    private Integer idCampus;
     private String name;
 
     @OneToMany(mappedBy = "campus", cascade = CascadeType.ALL)
@@ -35,11 +35,11 @@ public class Campus implements Serializable {
     }
 
     //getters & setters
-    public int getId() {
+    public Integer getId() {
         return idCampus;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.idCampus = id;
     }
 

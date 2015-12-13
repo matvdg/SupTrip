@@ -20,7 +20,7 @@ public interface TripDao {
     /**
      * Find a trip by id
      */
-    Trip findTripById(int id);
+    Trip findTripById(Integer id);
 
     /**
      * @return an unmodifiable list of all trips stored in memory filtered by Campus
@@ -42,10 +42,10 @@ public interface TripDao {
     /**
      * Return the number of traveller by trip
      */
-    int getTravellersNumber(Trip trip);
+    Integer getTravellersNumber(Trip trip);
 
     /**
      * Remove a trip from the memory by ID
      */
-    void removeTripById(int id);
+    void removeTripById(Integer id);
 }

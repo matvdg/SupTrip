@@ -49,7 +49,7 @@ public class JpaUserDao implements UserDao {
     }
 
     @Override
-    public User findUserById(int id) {
+    public User findUserById(Integer id) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         User user = null;

@@ -18,11 +18,11 @@ public class HomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        int campuses = DaoFactory.getCampusDao().getAllCampuses().size();
-        int students = DaoFactory.getUserDao().getAllUsers().size();
-        int trips = DaoFactory.getTripDao().getAllTrips().size();
+        Integer campuses = DaoFactory.getCampusDao().getAllCampuses().size();
+        Integer students = DaoFactory.getUserDao().getAllUsers().size();
+        Integer trips = DaoFactory.getTripDao().getAllTrips().size();
         ServletContext sc = getServletContext();
-        int nbOfConnection = 1;
+        Integer nbOfConnection = 1;
         if (getServletContext().getAttribute("nbOfConnection") != null) {
             nbOfConnection = (int) sc.getAttribute("nbOfConnection");
         }

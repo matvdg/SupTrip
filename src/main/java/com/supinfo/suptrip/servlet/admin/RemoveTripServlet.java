@@ -13,7 +13,7 @@ import java.io.IOException;
 public class RemoveTripServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        Integer id = Integer.parseInt(request.getParameter("id"));
         DaoFactory.getTripDao().removeTripById(id);
         response.sendRedirect("/supTrip/auth/manageTrip");
     }

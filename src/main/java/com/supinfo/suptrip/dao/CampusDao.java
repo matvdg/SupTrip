@@ -19,7 +19,7 @@ public interface CampusDao {
     /**
      * Find a campus by id
      */
-    Campus findCampusById(int id);
+    Campus findCampusById(Integer id);
 
     /**
      * Find a campus by name
@@ -39,15 +39,15 @@ public interface CampusDao {
     /**
      * Remove a campus from the memory by ID
      */
-    void removeCampusById(int id);
+    void removeCampusById(Integer id);
 
     /**
      * Return the number of students by campus
      */
-    int getStudentsNumber(Campus campus);
+    Integer getStudentsNumber(Campus campus);
 
     /**
      * Return the number of campus
      */
-    int getCampusNumber();
+    Integer getCampusNumber();
 }

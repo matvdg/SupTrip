@@ -16,7 +16,7 @@ public class Trip implements Serializable {
     // properties
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idTrip;
+    private Integer idTrip;
 
     private Date departureTime;
     private Date arrivalTime;
@@ -45,11 +45,11 @@ public class Trip implements Serializable {
     }
 
     //getters & setters
-    public int getId() {
+    public Integer getId() {
         return idTrip;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.idTrip = id;
     }
 

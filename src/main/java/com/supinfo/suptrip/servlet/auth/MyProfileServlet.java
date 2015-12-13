@@ -28,7 +28,7 @@ public class MyProfileServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String passwordBis = request.getParameter("passwordBis");
-        int idCampus = Integer.parseInt(request.getParameter("idCampus"));
+        Integer idCampus = Integer.parseInt(request.getParameter("idCampus"));
         Campus campus = DaoFactory.getCampusDao().findCampusById(idCampus);
         User currentUser = (User) session.getAttribute("currentUser");
         if (!password.isEmpty() && !passwordBis.isEmpty() && password.equals(passwordBis)) {

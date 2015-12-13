@@ -51,7 +51,7 @@ public class JpaTripDao implements TripDao {
     }
 
     @Override
-    public Trip findTripById(int id) {
+    public Trip findTripById(Integer id) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         Trip trip = null;
@@ -121,7 +121,7 @@ public class JpaTripDao implements TripDao {
     }
 
     @Override
-    public int getTravellersNumber(Trip trip) {
+    public Integer getTravellersNumber(Trip trip) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         List<User> resultList = new ArrayList<User>();
@@ -138,7 +138,7 @@ public class JpaTripDao implements TripDao {
     }
 
     @Override
-    public void removeTripById(int id) {
+    public void removeTripById(Integer id) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction t = em.getTransaction();
         Trip trip = null;

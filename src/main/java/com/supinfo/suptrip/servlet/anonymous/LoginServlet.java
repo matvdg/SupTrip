@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
         String idBoosterString = request.getParameter("idBooster");
         String password = request.getParameter("password");
         try {
-            int idBooster = Integer.parseInt(idBoosterString);
+            Integer idBooster = Integer.parseInt(idBoosterString);
             session.setAttribute("idError", false);
             User user = DaoFactory.getUserDao().findUserById(idBooster);
             if (user != null) {
