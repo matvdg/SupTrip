@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-@WebServlet(name = "SigninServlet", urlPatterns = "/supTrip/signin")
+@WebServlet(name = "SigninServlet", urlPatterns = "/signin")
 public class SigninServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,22 +41,22 @@ public class SigninServlet extends HttpServlet {
                         User newUser = new User(idBooster, firstName, lastName, email, password, isAdmin, campus);
                         DaoFactory.getUserDao().addUser(newUser);
                         session.setAttribute("idBooster", Integer.toString(newUser.getId()));
-                        response.sendRedirect("/supTrip/auth/listTrip");
+                        response.sendRedirect(request.getServletContext().getContextPath() + "/auth/listTrip");
                     } else {
                         session.setAttribute("emptyError", true);
-                        response.sendRedirect("/supTrip/signin");
+                        response.sendRedirect(request.getServletContext().getContextPath() + "/signin");
                     }
                 } else {
                     session.setAttribute("passwordError", true);
-                    response.sendRedirect("/supTrip/signin");
+                    response.sendRedirect(request.getServletContext().getContextPath() + "/signin");
                 }
             } else {
                 session.setAttribute("boosterError", true);
-                response.sendRedirect("/supTrip/signin");
+                response.sendRedirect(request.getServletContext().getContextPath() + "/signin");
             }
         } catch (NumberFormatException e) {
             session.setAttribute("idError", true);
-            response.sendRedirect("/supTrip/signin");
+            response.sendRedirect(request.getServletContext().getContextPath() + "/signin");
         }
     }
 

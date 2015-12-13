@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "ManageCampusServlet", urlPatterns = "/supTrip/auth/manageCampus")
+@WebServlet(name = "ManageCampusServlet", urlPatterns = "/auth/manageCampus")
 public class ManageCampusServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,7 +22,7 @@ public class ManageCampusServlet extends HttpServlet {
         Campus newCampus = new Campus();
         newCampus.setName(name);
         DaoFactory.getCampusDao().addCampus(newCampus);
-        response.sendRedirect("/supTrip/auth/manageCampus");
+        response.sendRedirect(request.getServletContext().getContextPath() + "/auth/manageCampus");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

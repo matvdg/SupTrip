@@ -23,7 +23,7 @@
             <h1>Sign in</h1>
             <h2 class="form-signin-heading"> Please fill in the form to register </h2>
 
-            <form class="form-signin" role="form" action="/supTrip/signin" method="post">
+            <form class="form-signin" role="form" action="${pageContext.request.servletContext.contextPath}/signin" method="post">
                 <p>
                     <div style="width: 300px" class="form-group has-error"><label>ID Booster</label><input name="idBooster" type="text" class="form-control booster" placeholder="123456" data-placement="top" data-trigger="manual" data-content="Your ID Booster must be a six-digits number!"></div>
                     <% if (idError) { %>

@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-@WebServlet(name = "/MyProfileServlet", urlPatterns = "/supTrip/auth/myProfile")
+@WebServlet(name = "/MyProfileServlet", urlPatterns = "/auth/myProfile")
 public class MyProfileServlet extends HttpServlet {
 
 
@@ -41,14 +41,14 @@ public class MyProfileServlet extends HttpServlet {
                 currentUser.setCampus(campus);
                 DaoFactory.getUserDao().updateUser(currentUser);
                 session.setAttribute("emptyError", false);
-                response.sendRedirect("/supTrip/auth/myProfile");
+                response.sendRedirect(request.getServletContext().getContextPath() + "/auth/myProfile");
             } else {
                 session.setAttribute("emptyError", true);
-                response.sendRedirect("/supTrip/auth/myProfile");
+                response.sendRedirect(request.getServletContext().getContextPath() + "/auth/myProfile");
             }
         } else {
             session.setAttribute("passwordError", true);
-            response.sendRedirect("/supTrip/auth/myProfile");
+            response.sendRedirect(request.getServletContext().getContextPath() + "/auth/myProfile");
         }
     }
 

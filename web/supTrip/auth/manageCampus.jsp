@@ -14,7 +14,7 @@
         List<Campus> campuses = (List<Campus>) request.getAttribute("campuses");
         List<Integer> counters = (List<Integer>) request.getAttribute("counters");
         if (session.getAttribute("removeError") != null) {
-            boolean removeError = (boolean) session.getAttribute("removeError");
+            Boolean removeError = (Boolean) session.getAttribute("removeError");
             if (removeError) { %>
                 <script>
                     alert('Impossible to remove this campus because you\'re part of it.');
@@ -25,7 +25,7 @@
     %>
 
 
-    <form method="post" action="/supTrip/auth/manageCampus">
+    <form method="post" action="${pageContext.request.servletContext.contextPath}/auth/manageCampus">
         <div class="jumbotron">
             <h1>Add a new campus</h1>
             <p>
@@ -61,7 +61,7 @@
                     <td><b> <%= counters.get(counter) %> </b></td>
 
                     <td>
-                        <a href="/supTrip/auth/removeCampus?id=<%= campus.getId() %>">
+                        <a href="${pageContext.request.servletContext.contextPath}/auth/removeCampus?id=<%= campus.getId() %>">
                             <span class="glyphicon glyphicon-trash"></span> Remove
                         </a>
                     </td>

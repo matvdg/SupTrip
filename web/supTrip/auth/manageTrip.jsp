@@ -8,8 +8,8 @@
 <html>
 <head>
     <title>Manage SupTrip</title>
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="${pageContext.request.servletContext.contextPath}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="${pageContext.request.servletContext.contextPath}/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     %>
 
 
-    <form method="post" action="/supTrip/auth/manageTrip">
+    <form method="post" action="${pageContext.request.servletContext.contextPath}/auth/manageTrip">
         <div class="jumbotron">
             <h1>Add a new SupTrip</h1>
             <div>
@@ -137,7 +137,7 @@
                     <td><b> <%= counters.get(counter) %> </b></td>
                     <td><b> $<%= trip.getPrice() %> </b></td>
                     <td>
-                        <a href="/supTrip/auth/removeTrip?id=<%= trip.getId() %>">
+                        <a href="${pageContext.request.servletContext.contextPath}/auth/removeTrip?id=<%= trip.getId() %>">
                             <span class="glyphicon glyphicon-trash"></span> Remove
                         </a>
                     </td>
@@ -154,10 +154,10 @@
 
 
 </div>
-<script type="text/javascript" src="/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
-<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-<script type="text/javascript" src="/js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript" src="${pageContext.request.servletContext.contextPath}/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="${pageContext.request.servletContext.contextPath}/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.servletContext.contextPath}/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="${pageContext.request.servletContext.contextPath}/js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
 <script type="text/javascript">
     $('.form_datetime').datetimepicker({
         //language:  'fr',

@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "AuthentificateFilter", urlPatterns = "/supTrip/auth/*")
+@WebFilter(filterName = "AuthentificateFilter", urlPatterns = "/auth/*")
 
 public class AuthentificateFilter implements Filter {
     public void destroy() {
@@ -19,7 +19,7 @@ public class AuthentificateFilter implements Filter {
         HttpSession session = ((HttpServletRequest)req).getSession();
         String idBooster = (String) session.getAttribute("idBooster");
         if (idBooster == null) {
-            ((HttpServletResponse) resp).sendRedirect("/supTrip/login");
+            ((HttpServletResponse) resp).sendRedirect("/login");
         } else {
             chain.doFilter(req, resp);
         }

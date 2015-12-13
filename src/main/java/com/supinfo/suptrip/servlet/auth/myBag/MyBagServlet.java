@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "MyBagServlet", urlPatterns = "/supTrip/auth/myBag")
+@WebServlet(name = "MyBagServlet", urlPatterns = "/auth/myBag")
 public class MyBagServlet extends HttpServlet {
 
 

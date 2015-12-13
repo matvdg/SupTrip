@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet(name = "HomeServlet", urlPatterns = "/supTrip/home")
+@WebServlet(name = "HomeServlet", urlPatterns = "/home")
 public class HomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

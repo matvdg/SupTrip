@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="icon" type="image/png" href="${pageContext.request.servletContext.contextPath}/assets/icon.png" />
     <title>SupTrip</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -41,20 +41,20 @@
 
                 <% String url = request.getRequestURI();%>
 
-                <li <% if (url.equals("/supTrip/home.jsp")) { %>class="active" <%}%>><a  href="/supTrip/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li <% if (url.equals("${pageContext.request.servletContext.contextPath}/home.jsp")) { %>class="active" <%}%>><a  href="${pageContext.request.servletContext.contextPath}/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <% if (session.getAttribute("idBooster") != null) { %>
-                    <li <% if (url.equals("/supTrip/auth/listTrip.jsp")) { %>class="active" <%}%>><a  href="/supTrip/auth/listTrip"><span class="glyphicon glyphicon-eye-open"></span> View SupTrips</a></li>
-                    <li <% if (url.equals("/supTrip/auth/myBag.jsp")) { %>class="active" <%}%>><a  href="/supTrip/auth/myBag"><span class="glyphicon glyphicon-shopping-cart"></span> My Bag</a></li>
-                    <li <% if (url.equals("/supTrip/auth/myProfile.jsp")) { %>class="active" <%}%>><a  href="/supTrip/auth/myProfile"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                    <li <% if (url.equals("${pageContext.request.servletContext.contextPath}/auth/listTrip.jsp")) { %>class="active" <%}%>><a  href="${pageContext.request.servletContext.contextPath}/auth/listTrip"><span class="glyphicon glyphicon-eye-open"></span> View SupTrips</a></li>
+                    <li <% if (url.equals("${pageContext.request.servletContext.contextPath}/auth/myBag.jsp")) { %>class="active" <%}%>><a  href="${pageContext.request.servletContext.contextPath}/auth/myBag"><span class="glyphicon glyphicon-shopping-cart"></span> My Bag</a></li>
+                    <li <% if (url.equals("${pageContext.request.servletContext.contextPath}/auth/myProfile.jsp")) { %>class="active" <%}%>><a  href="${pageContext.request.servletContext.contextPath}/auth/myProfile"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
                 <%}%>
                 <%if (isAdmin) {%>
-                        <li <% if (url.equals("/supTrip/auth/manageTrip.jsp")) { %>class="active" <%}%>><a href="/supTrip/auth/manageTrip"><span class="glyphicon glyphicon-plane"></span> Manage Trip</a></li>
-                        <li <% if (url.equals("/supTrip/auth/manageCampus.jsp")) { %>class="active" <%}%>><a  href="/supTrip/auth/manageCampus"><span class="glyphicon glyphicon-education"></span> Manage Campus</a></li>
+                        <li <% if (url.equals("${pageContext.request.servletContext.contextPath}/auth/manageTrip.jsp")) { %>class="active" <%}%>><a href="${pageContext.request.servletContext.contextPath}/auth/manageTrip"><span class="glyphicon glyphicon-plane"></span> Manage Trip</a></li>
+                        <li <% if (url.equals("${pageContext.request.servletContext.contextPath}/auth/manageCampus.jsp")) { %>class="active" <%}%>><a  href="${pageContext.request.servletContext.contextPath}/auth/manageCampus"><span class="glyphicon glyphicon-education"></span> Manage Campus</a></li>
                 <%}%>
                 <% if (session.getAttribute("idBooster") == null) { %>
-                        <li <% if (url.equals("/supTrip/login.jsp")) { %>class="active" <%}%>><a href="/supTrip/login"><span class="glyphicon glyphicon-user"></span> Log in</a></li>
+                        <li <% if (url.equals("${pageContext.request.servletContext.contextPath}/login.jsp")) { %>class="active" <%}%>><a href="${pageContext.request.servletContext.contextPath}/login"><span class="glyphicon glyphicon-user"></span> Log in</a></li>
                 <% } else { %>
-                <li><a href="/supTrip/logout"><span
+                <li><a href="${pageContext.request.servletContext.contextPath}/logout"><span
                         class="glyphicon glyphicon-off"></span> <%= session.getAttribute("idBooster") %> - Logout</a>
                 </li>
                 <% } %>

@@ -9,7 +9,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet(name = "LogoutServlet", urlPatterns = "/supTrip/logout")
+@WebServlet(name = "LogoutServlet", urlPatterns = "/logout")
 public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
@@ -18,7 +18,7 @@ public class LogoutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         session.removeAttribute("idBooster");
-        response.sendRedirect("/supTrip/home");
+        response.sendRedirect(request.getServletContext().getContextPath() + "/home");
         //empty the bag
         if (session.getAttribute("myBag") != null) {
             session.removeAttribute("myBag");

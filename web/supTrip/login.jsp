@@ -15,11 +15,11 @@
 <div class="table-responsive">
     <div class="jumbotron" style="height: 100%;margin-left: 0px;margin-right: 0px;width: 100%;">
         <div style="text-align: center;">
-            <img src="/assets/suptrip.png" style=" width: 200px;height: 200px;">
+            <img src="${pageContext.request.servletContext.contextPath}/assets/suptrip.png" style=" width: 200px;height: 200px;">
         </div>
         <h1>Log in</h1>
         <p>
-            <form class="form-signin" role="form" action="/supTrip/login" method="post">
+            <form class="form-signin" role="form" action="${pageContext.request.servletContext.contextPath}/login" method="post">
                 <p>
                     <input style="width: 300px" type="text" class="form-control" placeholder="ID Booster" name="idBooster">
                     <input style="width: 300px" type="password" class="form-control" placeholder="Password"

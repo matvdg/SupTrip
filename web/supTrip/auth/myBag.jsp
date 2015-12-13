@@ -67,7 +67,7 @@
                 <td><b> <%= format.format(trip.getArrivalTime()) %> </b></td>
                 <td><b> $<%= trip.getPrice() %> </b></td>
                 <td>
-                    <a href="/supTrip/auth/removeFromMyBag?id=<%= trip.getId() %>">
+                    <a href="${pageContext.request.servletContext.contextPath}/auth/removeFromMyBag?id=<%= trip.getId() %>">
                         <span class="glyphicon glyphicon-trash"></span> Remove
                     </a>
                 </td>
@@ -85,7 +85,7 @@
                 if (trips.isEmpty()) {
                     %><p>Your bag is empty.</p><%
                 } else {
-                    %><a class="btn btn-primary btn-lg" href="/supTrip/auth/processOrder" role="button">Process Order</a><%
+                    %><a class="btn btn-primary btn-lg" href="${pageContext.request.servletContext.contextPath}/auth/processOrder" role="button">Process Order</a><%
                 }
         %>
     </div>

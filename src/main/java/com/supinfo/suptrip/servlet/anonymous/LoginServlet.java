@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet(name = "LoginServlet", urlPatterns = "/supTrip/login")
+@WebServlet(name = "LoginServlet", urlPatterns = "/login")
 
 public class LoginServlet extends HttpServlet {
 
@@ -31,18 +31,18 @@ public class LoginServlet extends HttpServlet {
                 if (user.getPassword().equals(DigestUtils.shaHex(password))) {
                     session.setAttribute("authError", false);
                     session.setAttribute("idBooster", Integer.toString(user.getId()));
-                    response.sendRedirect("/supTrip/auth/listTrip");
+                    response.sendRedirect(request.getServletContext().getContextPath() + "/auth/listTrip");
                 } else {
                     session.setAttribute("authError", true);
-                    response.sendRedirect("/supTrip/login");
+                    response.sendRedirect(request.getServletContext().getContextPath() + "/login");
                 }
             } else {
                 session.setAttribute("boosterError", true);
-                response.sendRedirect("/supTrip/login");
+                response.sendRedirect(request.getServletContext().getContextPath() + "/login");
             }
         } catch (NumberFormatException e) {
             session.setAttribute("idError", true);
-            response.sendRedirect("/supTrip/login");
+            response.sendRedirect(request.getServletContext().getContextPath() + "/login");
         }
 
     }

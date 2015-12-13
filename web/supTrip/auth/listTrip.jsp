@@ -20,7 +20,7 @@
         DateFormat format = new SimpleDateFormat("dd/MM/yy '-' hh:mm a", Locale.ENGLISH);
     %>
 
-    <form method="post" action="/supTrip/auth/listTrip">
+    <form method="post" action="${pageContext.request.servletContext.contextPath}/auth/listTrip">
         <div class="jumbotron">
             <h1>Look for a SupTrip</h1>
             <p>
@@ -28,7 +28,7 @@
             </p>
             <p>
                 <input class="btn btn-primary btn-lg" type="submit" value="Filter" />
-                <a class="btn btn-danger btn-lg" href="/supTrip/auth/listTrip" role="button">Remove Filter</a>
+                <a class="btn btn-danger btn-lg" href="${pageContext.request.servletContext.contextPath}/auth/listTrip" role="button">Remove Filter</a>
             </p>
             <table class="table table-striped">
 
@@ -76,7 +76,7 @@
                     <td><b> <%= counters.get(counter) %> </b></td>
                     <td><b> $<%= trip.getPrice() %> </b></td>
                     <td>
-                        <a href="/supTrip/auth/addToMyBag?id=<%= trip.getId() %>">
+                        <a href="${pageContext.request.servletContext.contextPath}/auth/addToMyBag?id=<%= trip.getId() %>">
                             <span class="glyphicon glyphicon-shopping-cart"></span> Add to MyBag
                         </a>
                     </td>

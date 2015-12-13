@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "ListTripServlet", urlPatterns = "/supTrip/auth/listTrip")
+@WebServlet(name = "ListTripServlet", urlPatterns = "/auth/listTrip")
 public class ListTripServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,7 +26,7 @@ public class ListTripServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("filter",campus);
         }
-        response.sendRedirect("/supTrip/auth/listTrip");
+        response.sendRedirect(request.getServletContext().getContextPath() + "/auth/listTrip");
 
     }
 

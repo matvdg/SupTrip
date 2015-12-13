@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-@WebServlet(name = "ManageTripServlet", urlPatterns = "/supTrip/auth/manageTrip")
+@WebServlet(name = "ManageTripServlet", urlPatterns = "/auth/manageTrip")
 public class ManageTripServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -54,25 +54,25 @@ public class ManageTripServlet extends HttpServlet {
                         newTrip.setArrivalTime(arrival);
                         newTrip.setPrice(price);
                         DaoFactory.getTripDao().addTrip(newTrip);
-                        response.sendRedirect("/supTrip/auth/manageTrip");
+                        response.sendRedirect(request.getServletContext().getContextPath() + "/auth/manageTrip");
 
                     } catch (NumberFormatException e) {
                         session.setAttribute("priceError", true);
-                        response.sendRedirect("/supTrip/auth/manageTrip");
+                        response.sendRedirect(request.getServletContext().getContextPath() + "/auth/manageTrip");
                     }
                 } else {
                     session.setAttribute("dateError", true);
-                    response.sendRedirect("/supTrip/auth/manageTrip");
+                    response.sendRedirect(request.getServletContext().getContextPath() + "/auth/manageTrip");
                 }
             } else {
                 session.setAttribute("campusError", true);
-                response.sendRedirect("/supTrip/auth/manageTrip");
+                response.sendRedirect(request.getServletContext().getContextPath() + "/auth/manageTrip");
             }
         } catch (ParseException e) {
             System.out.println("error parsing");
             e.printStackTrace();
             session.setAttribute("dateError", true);
-            response.sendRedirect("/supTrip/auth/manageTrip");
+            response.sendRedirect(request.getServletContext().getContextPath() + "/auth/manageTrip");
         }
 
 

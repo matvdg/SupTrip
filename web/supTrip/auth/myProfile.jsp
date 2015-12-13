@@ -31,7 +31,7 @@
         <h1><%=currentUser.getFirstName()+" "+currentUser.getLastName()+" - "+currentUser.getCampus().getName()%></h1>
         <h2 class="form-signin-heading"> Update my profile: </h2>
 
-        <form class="form-signin" role="form" action="/supTrip/auth/myProfile" method="post">
+        <form class="form-signin" role="form" action="${pageContext.request.servletContext.contextPath}/auth/myProfile" method="post">
             <p>
                 <div class="form-group">
                     <div style="width: 300px" class="form-group has-error"><label>First Name:</label><input name="firstName" type="text" class="form-control name" placeholder="John" value="<%=currentUser.getFirstName()%>" data-placement="top" data-trigger="manual" data-content="Modify forename here"></div>
@@ -110,7 +110,7 @@
 </div>
 
 
-<script type="text/javascript" src="/js/PopoverValidation.js"></script>
+<script type="text/javascript" src="${pageContext.request.servletContext.contextPath}/js/PopoverValidation.js"></script>
 <jsp:include page="../footer.jsp" />
 </body>
 </html>
