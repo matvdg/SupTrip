@@ -3,31 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8cfc632-a5a8-46ea-ad1c-439baedd9ff2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SupTrip.iml" afterPath="$PROJECT_DIR$/SupTrip.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/filter/AuthentificateFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/filter/AuthentificateFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/ManageCampusServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/ManageCampusServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/ManageTripServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/ManageTripServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/RemoveCampusServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/RemoveCampusServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/RemoveTripServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/admin/RemoveTripServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/anonymous/HomeServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/anonymous/HomeServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/anonymous/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/anonymous/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/anonymous/SigninServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/anonymous/SigninServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/ListTripServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/ListTripServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/LogoutServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/MyProfileServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/MyProfileServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/AddToMyBagServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/AddToMyBagServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/MyBagServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/MyBagServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/ProcessOrderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/ProcessOrderServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/RemoveFromMyBagServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/suptrip/servlet/auth/myBag/RemoveFromMyBagServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/auth/listTrip.jsp" afterPath="$PROJECT_DIR$/web/supTrip/auth/listTrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/auth/manageCampus.jsp" afterPath="$PROJECT_DIR$/web/supTrip/auth/manageCampus.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/auth/manageTrip.jsp" afterPath="$PROJECT_DIR$/web/supTrip/auth/manageTrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/auth/myBag.jsp" afterPath="$PROJECT_DIR$/web/supTrip/auth/myBag.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/auth/myProfile.jsp" afterPath="$PROJECT_DIR$/web/supTrip/auth/myProfile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/header.jsp" afterPath="$PROJECT_DIR$/web/supTrip/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/home.jsp" afterPath="$PROJECT_DIR$/web/supTrip/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/login.jsp" afterPath="$PROJECT_DIR$/web/supTrip/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supTrip/signin.jsp" afterPath="$PROJECT_DIR$/web/supTrip/signin.jsp" />
     </list>
     <ignored path="SupCommerce.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1348,7 +1323,7 @@
       <workItem from="1449966116823" duration="474000" />
       <workItem from="1449968043203" duration="697000" />
       <workItem from="1450013801948" duration="392000" />
-      <workItem from="1450038121460" duration="5392000" />
+      <workItem from="1450038121460" duration="5399000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies into project&#10;(Tomcat, Hibernate, mySqlConnector, Jersey)">
       <created>1449431770331</created>
@@ -1452,11 +1427,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449966591019</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="updating &lt;provider&gt;">
+      <created>1450044630178</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1450044630178</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192258000" />
+    <option name="totallyTimeSpent" value="192265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
