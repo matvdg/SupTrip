@@ -6,9 +6,7 @@
     <persistence-unit name="suptrip"
                       transaction-type="RESOURCE_LOCAL">
 
-        <provider>
-            org.hibernate.ejb.HibernatePersistence
-        </provider>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <properties>
             <property
